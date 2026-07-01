@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#ffead2;--fg:#2a1f2e;--coral:#ff5a4a;--muted:#7a6f78;--card:#fff7ee}
+:root{--bg:#ffead2;--fg:#2a1f2e;--coral:#ff5a4a;--secondary:#9e69b1;--accent:#79408d;--muted:#78677e;--card:#ffffff;--border:#d8cede}
 *{box-sizing:border-box}html,body{margin:0}
 body{font-family:"DM Sans",sans-serif;color:var(--fg);background:var(--bg)}
 h1,h2,h3{font-family:"Outfit",sans-serif;margin:0;letter-spacing:-.02em}
@@ -16,16 +16,16 @@ a{color:inherit}
 .toggle button.on{background:var(--coral);color:#fff}
 .stage{display:grid;grid-template-columns:1.45fr 1fr;height:calc(100vh - 46px);min-height:520px}
 #map{height:100%}
-.panel{background:#fff7ee;border-left:1px solid #0001;overflow-y:auto;padding:22px}
+.panel{background:#ffffff;border-left:1px solid #0001;overflow-y:auto;padding:22px}
 .panel .py{font-family:"Outfit";font-weight:800;color:var(--coral);font-size:14px}
 .panel h2{font-size:23px;margin:3px 0 10px}
-.lead{color:#3a3038;font-size:14.5px;line-height:1.6;margin:0 0 16px}
+.lead{color:#2a1f2e;font-size:14.5px;line-height:1.6;margin:0 0 16px}
 .count{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 10px}
 .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 figure{margin:0}
-figure img,.vidtile{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;background:#eadcc9;cursor:pointer;display:block}
+figure img,.vidtile{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;background:#e7dcea;cursor:pointer;display:block}
 figcaption{font-size:11.5px;color:var(--muted);line-height:1.35;margin-top:5px}
-.vidtile{position:relative;display:flex;align-items:center;justify-content:center;background:#241a28}
+.vidtile{position:relative;display:flex;align-items:center;justify-content:center;background:#2a1f2e}
 .vidtile .play{width:52px;height:52px;border-radius:50%;background:var(--coral);color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;padding-left:3px}
 .vidtile .vtag{position:absolute;top:8px;right:8px;font-size:9px;letter-spacing:.1em;font-weight:700;background:#0007;color:#fff;padding:3px 7px;border-radius:5px}
 .hint{color:var(--muted);font-size:14px;text-align:center;margin-top:60px;padding:0 20px}
@@ -36,9 +36,9 @@ figcaption{font-size:11.5px;color:var(--muted);line-height:1.35;margin-top:5px}
 .icards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px}
 .icard{background:var(--card);border:1px solid #0001;border-radius:16px;overflow:hidden}
 .icard .ih{padding:16px 18px 6px}.icard .iw{font-family:"Outfit";font-weight:800;color:var(--coral);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
-.icard h3{font-size:18px;margin:4px 0 8px}.icard .it{color:#4a3f47;font-size:13.5px;line-height:1.55;margin:0}
+.icard h3{font-size:18px;margin:4px 0 8px}.icard .it{color:#2a1f2e;font-size:13.5px;line-height:1.55;margin:0}
 .icard .ig{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:14px 18px 18px}
-.icard .ig img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px;cursor:pointer;background:#eadcc9}
+.icard .ig img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px;cursor:pointer;background:#e7dcea}
 .lb{position:fixed;inset:0;background:#000e;display:none;flex-direction:column;gap:12px;align-items:center;justify-content:center;z-index:9999}
 .lb.on{display:flex}.lb img,.lb video{max-width:92vw;max-height:82vh;border-radius:8px}
 .lb .cap{color:#fff;font-size:14px;max-width:80vw;text-align:center}

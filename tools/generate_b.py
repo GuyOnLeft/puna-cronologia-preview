@@ -42,7 +42,9 @@ a{color:inherit}
 .vid .vcap{font-size:12px;color:var(--muted);margin-top:6px}
 .carousel{position:relative;border-radius:16px;overflow:hidden;background:#2a1f2e;box-shadow:0 20px 50px -30px #0007}
 .track{display:flex;transition:transform .5s cubic-bezier(.22,.61,.36,1)}
-.slide{min-width:100%;max-width:100%;margin:0;flex:0 0 100%}
+.slide{min-width:100%;max-width:100%;margin:0;flex:0 0 100%;position:relative}
+.notebadge{position:absolute;left:14px;bottom:14px;z-index:3;background:var(--coral);color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;padding:8px 14px;border-radius:999px;box-shadow:0 3px 10px #0007;display:inline-flex;align-items:center;gap:6px}
+.notebadge:hover{filter:brightness(1.06)}
 .slide img{width:100%;height:min(60vh,480px);object-fit:contain;background:#2a1f2e;display:block}
 .cbtn{position:absolute;top:50%;transform:translateY(-50%);background:#000a;color:#fff;border:0;width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;opacity:.85;transition:.2s}
 .cbtn:hover{opacity:1}.prev{left:12px}.next{right:12px}
@@ -73,7 +75,8 @@ const tabsEl=document.getElementById('tabs'), body=document.getElementById('ybod
 let timers=[];
 function clearTimers(){timers.forEach(t=>clearInterval(t));timers=[];}
 function carouselHTML(it,cid){
-  const slides=it.photos.map(p=>`<figure class="slide"><img loading="lazy" src="${p.u}" alt="${(p[LANG]||'').replace(/"/g,'&quot;')}"></figure>`).join('');
+  const slides=it.photos.map(p=>`<figure class="slide"><img loading="lazy" src="${p.u}" alt="${(p[LANG]||'').replace(/"/g,'&quot;')}">`+
+    (p.link?`<a class="notebadge" href="${p.link}" target="_blank" rel="noopener">📰 ${LANG==='es'?'Ver nota':'Read article'} →</a>`:'')+`</figure>`).join('');
   const multi=it.photos.length>1;
   return `<div class="carousel" id="${cid}"><div class="track">${slides}</div>`+
     (multi?`<button class="cbtn prev">‹</button><button class="cbtn next">›</button>`:'')+`</div>`+

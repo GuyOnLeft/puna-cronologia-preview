@@ -47,6 +47,11 @@ def ORD(folder, caps):
             if s.is_dir() and 'selecc' in s.name.lower(): d=s; break
     files=[f for f in sorted(d.glob("*")) if f.suffix.lower() in (".jpg",".jpeg",".png",".heic")][:len(caps)] if d.exists() else []
     return [{"u":opt(f),"es":es,"en":en} for f,(es,en) in zip(files,caps)]
+def ALL(folder, es, en):  # grab every image in a folder (filenames don't matter)
+    d=SRC/folder
+    if not d.exists(): return []
+    fs=[f for f in sorted(d.iterdir()) if f.suffix.lower() in (".jpg",".jpeg",".png",".heic")]
+    return [{"u":opt(f),"es":es,"en":en} for f in fs]
 
 VID={"sausalito":{"u":"assets/videos/sausalito-agua.mp4","es":"Mujeres de Sausalito cuentan la situación con el agua en su comunidad","en":"Women of Sausalito describe the water situation in their community"},
      "santaana":{"u":"assets/videos/santa-ana.mp4","es":"Actividad en la comunidad de Santa Ana","en":"Activity in the community of Santa Ana"}}
@@ -255,9 +260,9 @@ MILES=[
         ("IMG_3846","Victoria Araya con los miembros del SERPAJ","Victoria Araya with the members of SERPAJ"),
         ("IMG_3923","Firma del convenio entre Fundación Puna y SERPAJ","Signing of the agreement between Fundación Puna and SERPAJ")])},
  {"y":"2025","t_es":"Jornadas de Plantas Medicinales","t_en":"Medicinal Plants gatherings",
-  "x_es":"Junto al programa de radio cannábico de Jujuy, 'La Rama que Llama', se comienzan a organizar las primeras Jornadas de Plantas Medicinales de la provincia, en articulación con la Universidad Nacional de Jujuy.",
-  "x_en":"Together with Jujuy's cannabis radio program 'La Rama que Llama', the province's first Medicinal Plants gatherings begin to be organized, in coordination with the National University of Jujuy.",
-  "ph":[]},
+  "x_es":"Los pasados 9 y 10 de octubre, las instalaciones del Club Vial 6 fueron sede de las 1ras Jornadas de Cannabis y Plantas Medicinales de la provincia —organizadas junto al programa de radio cannábico 'La Rama que Llama'—, un importante espacio de encuentro, debate e intercambio de conocimientos, libre y gratuito. El evento marcó un hito al ser declarado de interés legislativo, un reconocimiento que subraya la urgencia y la relevancia de abordar esta temática de forma seria, interdisciplinaria y abierta a la comunidad. La iniciativa contó con el acompañamiento de la Universidad Nacional de Jujuy (UNJu): se destacó la presencia de autoridades institucionales, con la participación especial de la Dra. en Antropología Liliana Bergessio, reafirmando el compromiso de la universidad pública con espacios académicos que promuevan el pensamiento crítico y el abordaje de temáticas de impacto social.",
+  "x_en":"On October 9–10, the Club Vial 6 hosted the province's 1st Cannabis and Medicinal Plants Conference —organized together with the cannabis radio program 'La Rama que Llama'— a major, free and open space for gathering, debate and knowledge-sharing. The event was a milestone, declared of legislative interest, a recognition that underscores the urgency and relevance of addressing this topic seriously, across disciplines and open to the community. The initiative was accompanied by the National University of Jujuy (UNJu): institutional authorities took part, notably Dr. Liliana Bergessio (Anthropology), reaffirming the public university's commitment to academic spaces that foster critical thinking and socially impactful themes.",
+  "ph":ALL("2025-jornadas","1ras Jornadas de Cannabis y Plantas Medicinales — Club Vial 6 (9–10 de octubre 2025)","1st Cannabis & Medicinal Plants Conference — Club Vial 6 (Oct 9–10, 2025)")},
  {"y":"2025","t_es":"Amicus Curiae en el caso de la niña Cielo","t_en":"Amicus Curiae in the case of the child Cielo",
   "x_es":"Fundación Puna articuló una red de organizaciones nacionales e internacionales de derechos humanos, que incluyó al Cyrus R. Vance Center for International Justice (NYC Bar Association) y al Servicio Paz y Justicia (SERPAJ). Esta alianza estratégica intervino institucionalmente mediante la figura de Amicus Curiae en el caso de la niña Cielo (Chaco), promoviendo la correcta aplicación de los estándares de protección de la niñez y la perspectiva de género ante el sistema judicial argentino.",
   "x_en":"Fundación Puna convened a network of national and international human-rights organizations, including the Cyrus R. Vance Center for International Justice (NYC Bar Association) and Servicio Paz y Justicia (SERPAJ). This strategic alliance intervened institutionally through the figure of Amicus Curiae in the case of the child Cielo (Chaco), promoting the correct application of child-protection standards and a gender perspective before the Argentine judicial system.",

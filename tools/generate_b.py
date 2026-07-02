@@ -12,11 +12,11 @@ HTML='''<!doctype html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Camino de Cambio</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#ffead2;--fg:#79408d;--coral:#ff5a4a;--secondary:#9e69b1;--accent:#79408d;--muted:#9e69b1;--card:#ffffff;--border:#d8cede;--yc:#ff5a4a}
+:root{--bg:#ffead2;--fg:#2a1f2e;--coral:#ff5a4a;--secondary:#9e69b1;--accent:#79408d;--muted:#78677e;--card:#ffffff;--border:#d8cede;--yc:#ff5a4a}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:"DM Sans",sans-serif;line-height:1.55}
 h1,h2,h3,.ynum{font-family:"Outfit",sans-serif;margin:0;letter-spacing:-.02em}
 a{color:inherit}
-.nav{position:sticky;top:0;z-index:60;background:#79408d;color:#fff;display:flex;align-items:center;gap:12px;padding:11px 20px}
+.nav{position:sticky;top:0;z-index:60;background:#2a1f2e;color:#fff;display:flex;align-items:center;gap:12px;padding:11px 20px}
 .nav b{color:var(--coral)}.nav .sp{margin-left:auto}
 .nav a.map{font-size:13px;text-decoration:none;border:1px solid #fff3;padding:5px 13px;border-radius:999px}
 .toggle{display:flex;border:1px solid #fff3;border-radius:999px;overflow:hidden}
@@ -38,15 +38,15 @@ a{color:inherit}
 .isub{color:var(--yc);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.07em}
 .chapter h3{font-size:24px;margin:6px 0 12px}
 .chapter .txt p{color:var(--fg);opacity:.9;font-size:15.5px;margin:0 0 14px}
-.vid{margin-top:12px}.vid video{width:100%;border-radius:12px;display:block;background:#79408d}
+.vid{margin-top:12px}.vid video{width:100%;border-radius:12px;display:block;background:#2a1f2e}
 .vid .vcap{font-size:12px;color:var(--muted);margin-top:6px}
-.carousel{position:relative;border-radius:16px;overflow:hidden;background:#79408d;box-shadow:0 20px 50px -30px #0007}
+.carousel{position:relative;border-radius:16px;overflow:hidden;background:#2a1f2e;box-shadow:0 20px 50px -30px #0007}
 .track{display:flex;transition:transform .5s cubic-bezier(.22,.61,.36,1)}
 .slide{min-width:100%;max-width:100%;margin:0;flex:0 0 100%;position:relative}
 .notebadge{position:absolute;left:14px;bottom:14px;z-index:3;background:var(--coral);color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;padding:8px 14px;border-radius:999px;box-shadow:0 3px 10px #0007;display:inline-flex;align-items:center;gap:6px}
 .notebadge:hover{filter:brightness(1.06)}
-.slide img{width:100%;height:min(60vh,480px);object-fit:contain;background:#79408d;display:block}
-.cbtn{position:absolute;top:50%;transform:translateY(-50%);background:#79408de6;color:#fff;border:0;width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;opacity:.85;transition:.2s}
+.slide img{width:100%;height:min(60vh,480px);object-fit:contain;background:#2a1f2e;display:block}
+.cbtn{position:absolute;top:50%;transform:translateY(-50%);background:#2a1f2ee6;color:#fff;border:0;width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;opacity:.85;transition:.2s}
 .cbtn:hover{opacity:1}.prev{left:12px}.next{right:12px}
 .cbar{display:flex;justify-content:flex-end;margin-top:10px}
 .ccounter{font-size:12px;color:var(--muted);font-weight:600;white-space:nowrap}
@@ -54,7 +54,7 @@ a{color:inherit}
 .chapter.solo{grid-template-columns:1fr;max-width:860px}
 .soon{padding:16px 0 46px}
 .soon-badge{display:inline-block;color:#fff;font-weight:700;font-size:13px;padding:8px 18px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
-.foot{background:#79408d;color:#ffffffaa;text-align:center;padding:26px;font-size:13px}
+.foot{background:#2a1f2e;color:#ffffffaa;text-align:center;padding:26px;font-size:13px}
 </style></head><body>
 <div class="nav"><b>Camino de Cambio</b>
   <span style="font-size:12px;opacity:.6" data-es="borrador · formato B" data-en="draft · format B">borrador · formato B</span>

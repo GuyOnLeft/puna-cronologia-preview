@@ -41,16 +41,14 @@ a{color:inherit}
 .vid{margin-top:12px}.vid video{width:100%;border-radius:12px;display:block;background:#2a1f2e}
 .vid .vcap{font-size:12px;color:var(--muted);margin-top:6px}
 .carousel{position:relative;border-radius:16px;overflow:hidden;background:#2a1f2e;box-shadow:0 20px 50px -30px #0007}
-.track{display:flex;transition:transform .6s cubic-bezier(.22,.61,.36,1)}
-.slide{min-width:100%;position:relative}
-.slide img{width:100%;height:min(64vh,540px);object-fit:cover;display:block}
-.slide figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 20px 16px;color:#fff;font-size:14.5px;background:linear-gradient(transparent,#000b)}
-.cbtn{position:absolute;top:50%;transform:translateY(-50%);background:#0007;color:#fff;border:0;width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;opacity:0;transition:.2s}
-.carousel:hover .cbtn{opacity:1}.prev{left:12px}.next{right:12px}
-.dots{position:absolute;top:14px;right:14px;display:flex;gap:6px}
-.dots i{width:7px;height:7px;border-radius:50%;background:#ffffff66;cursor:pointer;transition:.2s}
-.dots i.on{background:#fff;width:20px;border-radius:6px}
-.counter{position:absolute;top:12px;left:14px;background:#0007;color:#fff;font-size:11px;padding:3px 9px;border-radius:999px}
+.track{display:flex;transition:transform .5s cubic-bezier(.22,.61,.36,1)}
+.slide{min-width:100%}
+.slide img{width:100%;height:min(60vh,480px);object-fit:contain;background:#2a1f2e;display:block}
+.cbtn{position:absolute;top:50%;transform:translateY(-50%);background:#000a;color:#fff;border:0;width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;opacity:.85;transition:.2s}
+.cbtn:hover{opacity:1}.prev{left:12px}.next{right:12px}
+.cbar{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-top:10px}
+.ccap{font-size:13.5px;color:var(--muted);line-height:1.45}
+.ccounter{font-size:12px;color:var(--muted);font-weight:600;white-space:nowrap}
 @media(max-width:820px){.chapter{grid-template-columns:1fr;gap:16px}.slide img{height:52vh}}
 .chapter.solo{grid-template-columns:1fr;max-width:860px}
 .soon{padding:16px 0 46px}
@@ -76,11 +74,12 @@ const tabsEl=document.getElementById('tabs'), body=document.getElementById('ybod
 let timers=[];
 function clearTimers(){timers.forEach(t=>clearInterval(t));timers=[];}
 function carouselHTML(it,cid){
-  const slides=it.photos.map(p=>`<figure class="slide"><img loading="lazy" src="${p.u}" alt=""><figcaption>${p[LANG]}</figcaption></figure>`).join('');
-  const dots=it.photos.map((_,i)=>`<i data-g="${i}" class="${i===0?'on':''}"></i>`).join('');
+  const slides=it.photos.map(p=>`<figure class="slide"><img loading="lazy" src="${p.u}" alt=""></figure>`).join('');
+  const multi=it.photos.length>1;
   return `<div class="carousel" id="${cid}"><div class="track">${slides}</div>`+
-    (it.photos.length>1?`<button class="cbtn prev">‹</button><button class="cbtn next">›</button>`+
-      `<div class="dots">${dots}</div><div class="counter"><span class="cur">1</span>/${it.photos.length}</div>`:'')+`</div>`;
+    (multi?`<button class="cbtn prev">‹</button><button class="cbtn next">›</button>`:'')+`</div>`+
+    `<div class="cbar"><div class="ccap" id="${cid}_cap">${it.photos.length?it.photos[0][LANG]:''}</div>`+
+    (multi?`<div class="ccounter"><span id="${cid}_cur">1</span>/${it.photos.length}</div>`:'')+`</div>`;
 }
 function videoHTML(it){
   if(!it.video) return '';
@@ -104,23 +103,17 @@ function renderYear(){
       (hasPh?`<div>${carouselHTML(it,cid)}</div>`:'')+`</div>`;});
   clearTimers();
   body.innerHTML=html;
-  y.items.forEach((it,idx)=>{if(it.photos.length>1)initCarousel(`c_${y.year}_${idx}`, it.photos.length);});
+  y.items.forEach((it,idx)=>{if(it.photos.length>1)initCarousel(`c_${y.year}_${idx}`, it.photos.map(p=>p[LANG]));});
   window.scrollTo({top:0});
 }
-function initCarousel(id,n){
-  if(n<=1) return;
-  const el=document.getElementById(id); if(!el) return;
-  const track=el.querySelector('.track'), dots=[...el.querySelectorAll('.dots i')], cur=el.querySelector('.cur');
-  let i=0, timer=null;
-  const go=k=>{i=(k+n)%n;track.style.transform=`translateX(${-i*100}%)`;dots.forEach((d,j)=>d.classList.toggle('on',j===i));if(cur)cur.textContent=i+1;};
-  const start=()=>{timer=setInterval(()=>go(i+1),4200);timers.push(timer);};
-  const reset=()=>{clearInterval(timer);start();};
-  el.querySelector('.next').onclick=()=>{go(i+1);reset();};
-  el.querySelector('.prev').onclick=()=>{go(i-1);reset();};
-  dots.forEach(d=>d.onclick=()=>{go(+d.dataset.g);reset();});
-  el.onmouseenter=()=>clearInterval(timer);
-  el.onmouseleave=()=>start();
-  start();
+function initCarousel(id,caps){
+  const n=caps.length; const el=document.getElementById(id); if(!el||n<=1) return;
+  const track=el.querySelector('.track');
+  const cur=document.getElementById(id+'_cur'), cap=document.getElementById(id+'_cap');
+  let i=0;
+  const go=k=>{i=(k+n)%n;track.style.transform=`translateX(${-i*100}%)`;if(cur)cur.textContent=i+1;if(cap)cap.textContent=caps[i];};
+  el.querySelector('.next').onclick=()=>go(i+1);
+  el.querySelector('.prev').onclick=()=>go(i-1);
 }
 function buildTabs(){
   tabsEl.innerHTML=YEARS.map(y=>`<button data-y="${y.year}">${y.year}</button>`).join('');

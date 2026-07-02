@@ -307,16 +307,18 @@ for y in order:
         items.sort(key=lambda it: 0 if "Cameron" in it["t_es"] else 1)
     YEARS.append({"year":y,"color":c,"label_es":les,"label_en":len_,"intro_es":ies,"intro_en":ien,"items":items})
 
-# Press coverage per year (from Amor's links) -> rendered as an "En la prensa" section.
-PRESS={
- "2025":[{"es":"Denunciando en Europa desastres extractivistas en nuestro país",
-          "en":"Denouncing our country's extractivist disasters, in Europe",
-          "src":"argentina.indymedia.org",
-          "url":"https://argentina.indymedia.org/2025/05/23/denunciando-en-europa-desastres-extractivistas-en-nuestro-pais/"}],
+# Press links attached to the specific action (milestone) they document (keyed by t_es).
+LINKS={
+ "Cumbre de Energías Limpias · Parlamento Europeo":[
+   {"es":"Denunciando en Europa desastres extractivistas en nuestro país",
+    "en":"Denouncing our country's extractivist disasters, in Europe",
+    "src":"argentina.indymedia.org",
+    "url":"https://argentina.indymedia.org/2025/05/23/denunciando-en-europa-desastres-extractivistas-en-nuestro-pais/"}],
 }
-_by={y["year"]:y for y in YEARS}
-for _yr,_items in PRESS.items():
-    if _yr in _by: _by[_yr]["press"]=_items
+for y in YEARS:
+    for it in y["items"]:
+        ls=LINKS.get(it["t_es"])
+        if ls: it["links"]=ls
 
 (pathlib.Path(__file__).parent/"years.json").write_text(json.dumps(YEARS,ensure_ascii=False,indent=1))
 tot=sum(len(y["items"]) for y in YEARS); ph=sum(len(it["photos"]) for y in YEARS for it in y["items"])

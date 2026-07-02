@@ -905,7 +905,15 @@
      "lon": 4.3517,
      "es": "Bruselas, Europa",
      "en": "Brussels, Europe"
-    }
+    },
+    "links": [
+     {
+      "es": "Denunciando en Europa desastres extractivistas en nuestro país",
+      "en": "Denouncing our country's extractivist disasters, in Europe",
+      "src": "argentina.indymedia.org",
+      "url": "https://argentina.indymedia.org/2025/05/23/denunciando-en-europa-desastres-extractivistas-en-nuestro-pais/"
+     }
+    ]
    },
    {
     "t_es": "Alianza con el SERPAJ",
@@ -970,14 +978,6 @@
      "es": "Chaco",
      "en": "Chaco"
     }
-   }
-  ],
-  "press": [
-   {
-    "es": "Denunciando en Europa desastres extractivistas en nuestro país",
-    "en": "Denouncing our country's extractivist disasters, in Europe",
-    "src": "argentina.indymedia.org",
-    "url": "https://argentina.indymedia.org/2025/05/23/denunciando-en-europa-desastres-extractivistas-en-nuestro-pais/"
    }
   ]
  }

@@ -52,14 +52,11 @@ a{color:inherit}
 .chapter.solo{grid-template-columns:1fr;max-width:860px}
 .soon{padding:16px 0 46px}
 .soon-badge{display:inline-block;color:#fff;font-weight:700;font-size:13px;padding:8px 18px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
-.press{max-width:1180px;margin:44px 0 0;padding-top:28px;border-top:1px solid var(--border)}
-.press h3{font-size:20px;color:var(--yc);margin:0 0 14px}
-.presslist{display:grid;gap:10px}
-.pressitem{display:flex;justify-content:space-between;align-items:center;gap:16px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;text-decoration:none;color:var(--fg);transition:border-color .15s}
-.pressitem:hover{border-color:var(--yc)}
-.pressitem .pt{display:block;font-weight:600;font-size:15px;line-height:1.35}
-.pressitem .ps{display:block;font-size:12px;color:var(--muted);margin-top:3px}
-.pressitem .arr{color:var(--yc);font-weight:800;font-size:18px}
+.mlinks{margin:0 0 14px;display:grid;gap:6px}
+.mlinks-h{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--yc);font-weight:700}
+.mlink{color:var(--yc);text-decoration:none;font-size:14px;font-weight:600;line-height:1.4}
+.mlink:hover{text-decoration:underline}
+.mlsrc{color:var(--muted);font-weight:400;font-size:12px}
 .foot{background:#2a1f2e;color:#ffffffaa;text-align:center;padding:26px;font-size:13px}
 </style></head><body>
 <div class="nav"><b>Camino de Cambio</b>
@@ -92,10 +89,10 @@ function videoHTML(it){
   return `<div class="vid"><video src="${it.video.u}" controls playsinline preload="metadata"></video>`+
          `<div class="vcap">▶ ${it.video[LANG]}</div></div>`;
 }
-function pressHTML(y){
-  if(!y.press||!y.press.length) return '';
-  return `<div class="press"><h3>${LANG==='es'?'En la prensa':'In the press'}</h3><div class="presslist">`+
-    y.press.map(a=>`<a class="pressitem" href="${a.url}" target="_blank" rel="noopener"><span><span class="pt">${a[LANG]}</span><span class="ps">${a.src}</span></span><span class="arr">↗</span></a>`).join('')+`</div></div>`;
+function linksHTML(it){
+  if(!it.links||!it.links.length) return '';
+  return `<div class="mlinks"><span class="mlinks-h">${LANG==='es'?'En la prensa':'In the press'}</span>`+
+    it.links.map(a=>`<a class="mlink" href="${a.url}" target="_blank" rel="noopener">↗ ${a[LANG]} <span class="mlsrc">· ${a.src}</span></a>`).join('')+`</div>`;
 }
 function renderYear(){
   const y=YEARS.find(x=>x.year===activeYear);
@@ -110,9 +107,8 @@ function renderYear(){
   y.items.forEach((it,idx)=>{const cid=`c_${y.year}_${idx}`; const hasPh=it.photos.length>0;
     html+=`<div class="chapter${hasPh?'':' solo'}" style="--yc:${y.color}"><div class="txt">`+
       (it['sub_'+LANG]?`<div class="isub">${it['sub_'+LANG]}</div>`:`<div class="isub">${y.year}</div>`)+
-      `<h3>${it['t_'+LANG]}</h3><p>${it['text_'+LANG]}</p>${videoHTML(it)}</div>`+
+      `<h3>${it['t_'+LANG]}</h3><p>${it['text_'+LANG]}</p>${linksHTML(it)}${videoHTML(it)}</div>`+
       (hasPh?`<div>${carouselHTML(it,cid)}</div>`:'')+`</div>`;});
-  html+=pressHTML(y);
   clearTimers();
   body.innerHTML=html;
   y.items.forEach((it,idx)=>{if(it.photos.length>1)initCarousel(`c_${y.year}_${idx}`, it.photos.length);});

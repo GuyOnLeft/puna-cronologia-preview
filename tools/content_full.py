@@ -291,7 +291,7 @@ LOC={
  "Amicus Curiae en el caso de la niña Cielo":(-27.45,-58.98,"Chaco","Chaco"),
 }
 # group -> years.json (structure generate_b.py expects)
-order=["2020","2021","2022","2023","2024","2025","2026"]
+order=["2020","2021","2022","2023","2024","2025"]  # 2026 added in January
 YEARS=[]
 for y in order:
     c,les,len_,ies,ien=YMETA[y]

@@ -566,6 +566,48 @@
   "intro_en": "2023 was marked by intense social, political and institutional conflict over a provincial constitutional reform that restricted the right to protest and communal land ownership. The defense of territory, water and human rights took center stage for the Foundation.",
   "items": [
    {
+    "t_es": "Verónica Chávez y James Cameron",
+    "t_en": "Verónica Chávez and James Cameron",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "Con el acompañamiento de Fundación Puna, Verónica Chávez, representante de la Comunidad Santuario Tres Pozos, se reunió en Buenos Aires con el cineasta y activista ambiental James Cameron, y expuso de primera mano cómo el avance de la extracción de litio afecta los territorios, el acceso al agua y las formas de vida en la Puna. Victoria Araya participó como traductora, proyectando la voz de la comunidad a escala internacional.",
+    "text_en": "With Fundación Puna's support, Verónica Chávez, representative of the Santuario Tres Pozos community, met in Buenos Aires with filmmaker and environmental activist James Cameron, and showed first-hand how the advance of lithium extraction affects the territories, water access and ways of life in the Puna. Victoria Araya took part as translator, projecting the community's voice on an international scale.",
+    "photos": [
+     {
+      "u": "assets/2023-cameron__2.jpg",
+      "es": "Verónica Chávez con James Cameron",
+      "en": "Verónica Chávez with James Cameron"
+     },
+     {
+      "u": "assets/2023-cameron__1.jpg",
+      "es": "Verónica Chávez con James Cameron",
+      "en": "Verónica Chávez with James Cameron"
+     },
+     {
+      "u": "assets/2023-cameron__3.jpg",
+      "es": "Reunión con Victoria Araya como traductora",
+      "en": "Meeting with Victoria Araya as translator"
+     },
+     {
+      "u": "assets/2023-cameron__4.jpg",
+      "es": "Verónica Chávez con Victoria Araya en Aeroparque",
+      "en": "Verónica Chávez with Victoria Araya at Aeroparque"
+     },
+     {
+      "u": "assets/2023-cameron__5.jpg",
+      "es": "Recorte de noticia",
+      "en": "News clipping"
+     }
+    ],
+    "video": null,
+    "loc": {
+     "lat": -34.6,
+     "lon": -58.38,
+     "es": "Buenos Aires",
+     "en": "Buenos Aires"
+    }
+   },
+   {
     "t_es": "Corte y permanencia en Purmamarca",
     "t_en": "Blockade and encampment in Purmamarca",
     "sub_es": "",
@@ -671,48 +713,6 @@
       "u": "assets/2023-tercer-malon-de-la-paz-en-buenos-aires-yamil__img-4358.jpg",
       "es": "Yamil Alejo en el Tercer Malón de la Paz",
       "en": "Yamil Alejo at the Third Malón de la Paz"
-     }
-    ],
-    "video": null,
-    "loc": {
-     "lat": -34.6,
-     "lon": -58.38,
-     "es": "Buenos Aires",
-     "en": "Buenos Aires"
-    }
-   },
-   {
-    "t_es": "Verónica Chávez y James Cameron",
-    "t_en": "Verónica Chávez and James Cameron",
-    "sub_es": "",
-    "sub_en": "",
-    "text_es": "Con el acompañamiento de Fundación Puna, Verónica Chávez, representante de la Comunidad Santuario Tres Pozos, se reunió en Buenos Aires con el cineasta y activista ambiental James Cameron, y expuso de primera mano cómo el avance de la extracción de litio afecta los territorios, el acceso al agua y las formas de vida en la Puna. Victoria Araya participó como traductora, proyectando la voz de la comunidad a escala internacional.",
-    "text_en": "With Fundación Puna's support, Verónica Chávez, representative of the Santuario Tres Pozos community, met in Buenos Aires with filmmaker and environmental activist James Cameron, and showed first-hand how the advance of lithium extraction affects the territories, water access and ways of life in the Puna. Victoria Araya took part as translator, projecting the community's voice on an international scale.",
-    "photos": [
-     {
-      "u": "assets/2023-cameron__2.jpg",
-      "es": "Verónica Chávez con James Cameron",
-      "en": "Verónica Chávez with James Cameron"
-     },
-     {
-      "u": "assets/2023-cameron__1.jpg",
-      "es": "Verónica Chávez con James Cameron",
-      "en": "Verónica Chávez with James Cameron"
-     },
-     {
-      "u": "assets/2023-cameron__3.jpg",
-      "es": "Reunión con Victoria Araya como traductora",
-      "en": "Meeting with Victoria Araya as translator"
-     },
-     {
-      "u": "assets/2023-cameron__4.jpg",
-      "es": "Verónica Chávez con Victoria Araya en Aeroparque",
-      "en": "Verónica Chávez with Victoria Araya at Aeroparque"
-     },
-     {
-      "u": "assets/2023-cameron__5.jpg",
-      "es": "Recorte de noticia",
-      "en": "News clipping"
      }
     ],
     "video": null,

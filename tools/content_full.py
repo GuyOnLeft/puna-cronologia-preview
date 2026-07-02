@@ -303,6 +303,8 @@ for y in order:
         L=LOC.get(m["t_es"])
         if L: it["loc"]={"lat":L[0],"lon":L[1],"es":L[2],"en":L[3]}
         items.append(it)
+    if y=="2023":  # James Cameron section first on the 2023 page
+        items.sort(key=lambda it: 0 if "Cameron" in it["t_es"] else 1)
     YEARS.append({"year":y,"color":c,"label_es":les,"label_en":len_,"intro_es":ies,"intro_en":ien,"items":items})
 
 # Press coverage per year (from Amor's links) -> rendered as an "En la prensa" section.

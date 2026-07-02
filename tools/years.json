@@ -26,7 +26,13 @@
       "en": "School tutoring during the isolation"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -23.2,
+     "lon": -65.95,
+     "es": "Barrancas, Jujuy",
+     "en": "Barrancas, Jujuy"
+    }
    },
    {
     "t_es": "Salud y territorio durante la pandemia",
@@ -52,7 +58,13 @@
       "en": "Victoria Araya, health volunteer in the Puna"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -23.42,
+     "lon": -66.57,
+     "es": "Susques, Jujuy",
+     "en": "Susques, Jujuy"
+    }
    },
    {
     "t_es": "El encuentro entre Victoria, Yamil y Pablo",
@@ -104,7 +116,13 @@
       "en": "Olga cleaning and sorting the donations"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -23.92,
+     "lon": -65.47,
+     "es": "Volcán, Jujuy",
+     "en": "Volcán, Jujuy"
+    }
    },
    {
     "t_es": "Santuario de Tres Pozos",
@@ -150,7 +168,13 @@
       "en": "Pablo Agüero in the community of Tres Pozos"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -23.63,
+     "lon": -65.75,
+     "es": "Santuario de Tres Pozos, Jujuy",
+     "en": "Santuario de Tres Pozos, Jujuy"
+    }
    },
    {
     "t_es": "Rinconadillas",
@@ -206,7 +230,13 @@
       "en": "Rinconadillas landscape"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -23.66,
+     "lon": -65.7,
+     "es": "Rinconadillas, Jujuy",
+     "en": "Rinconadillas, Jujuy"
+    }
    },
    {
     "t_es": "San Francisco de Alfarcito",
@@ -237,7 +267,13 @@
       "en": "Alfarcito"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -23.83,
+     "lon": -65.5,
+     "es": "San Francisco de Alfarcito, Jujuy",
+     "en": "San Francisco de Alfarcito, Jujuy"
+    }
    },
    {
     "t_es": "Sausalito · la cuestión del agua",
@@ -262,6 +298,12 @@
      "u": "assets/videos/sausalito-agua.mp4",
      "es": "Mujeres de Sausalito cuentan la situación con el agua en su comunidad",
      "en": "Women of Sausalito describe the water situation in their community"
+    },
+    "loc": {
+     "lat": -23.55,
+     "lon": -65.72,
+     "es": "Sausalito, Jujuy",
+     "en": "Sausalito, Jujuy"
     }
    },
    {
@@ -308,7 +350,13 @@
       "en": "Victoria Araya with the community of Tusaquillas"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -22.95,
+     "lon": -65.95,
+     "es": "Tusaquillas, Jujuy",
+     "en": "Tusaquillas, Jujuy"
+    }
    },
    {
     "t_es": "Santa Ana",
@@ -353,6 +401,12 @@
      "u": "assets/videos/santa-ana.mp4",
      "es": "Actividad en la comunidad de Santa Ana",
      "en": "Activity in the community of Santa Ana"
+    },
+    "loc": {
+     "lat": -23.33,
+     "lon": -65.3,
+     "es": "Santa Ana, Jujuy",
+     "en": "Santa Ana, Jujuy"
     }
    },
    {
@@ -404,7 +458,13 @@
       "en": "Activity in the community of Barrancas"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -23.2,
+     "lon": -65.95,
+     "es": "Barrancas, Jujuy",
+     "en": "Barrancas, Jujuy"
+    }
    },
    {
     "t_es": "Regreso a Rinconadillas y Ojo de Agua",
@@ -445,7 +505,13 @@
       "en": "Rinconadillas landscape"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -23.66,
+     "lon": -65.7,
+     "es": "Rinconadillas · Ojo de Agua, Jujuy",
+     "en": "Rinconadillas · Ojo de Agua, Jujuy"
+    }
    },
    {
     "t_es": "Clases de inglés online",
@@ -538,7 +604,13 @@
       "en": "Jeremy Munson at the Purmamarca blockade"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -23.745,
+     "lon": -65.5,
+     "es": "Purmamarca, Jujuy",
+     "en": "Purmamarca, Jujuy"
+    }
    },
    {
     "t_es": "Apoyo ante la represión — Lian Lamas",
@@ -564,7 +636,13 @@
       "en": "Lian Lamas with Estela de Carlotto"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -34.6,
+     "lon": -58.38,
+     "es": "Buenos Aires",
+     "en": "Buenos Aires"
+    }
    },
    {
     "t_es": "Tercer Malón de la Paz",
@@ -595,7 +673,13 @@
       "en": "Yamil Alejo at the Third Malón de la Paz"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -34.6,
+     "lon": -58.38,
+     "es": "Buenos Aires",
+     "en": "Buenos Aires"
+    }
    },
    {
     "t_es": "Verónica Chávez y James Cameron",
@@ -631,7 +715,13 @@
       "en": "News clipping"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -34.6,
+     "lon": -58.38,
+     "es": "Buenos Aires",
+     "en": "Buenos Aires"
+    }
    }
   ]
  },
@@ -662,7 +752,13 @@
       "en": "Fundación Puna meeting with members of the Third Malón de la Paz"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -24.185,
+     "lon": -65.297,
+     "es": "San Salvador de Jujuy",
+     "en": "San Salvador de Jujuy"
+    }
    },
    {
     "t_es": "Cumbre del Agua",
@@ -672,7 +768,13 @@
     "text_es": "La defensa del agua se consolida como una prioridad. En marzo, Fundación Puna participa en la Cumbre del Agua, un espacio de encuentro entre comunidades originarias, especialistas y activistas, donde se comparten estrategias para proteger los recursos hídricos frente al avance de políticas extractivas.",
     "text_en": "The defense of water consolidates as a priority. In March, Fundación Puna takes part in the Water Summit, a gathering of Indigenous communities, specialists and activists where strategies are shared to protect water resources against the advance of extractive policies.",
     "photos": [],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -24.185,
+     "lon": -65.297,
+     "es": "San Salvador de Jujuy",
+     "en": "San Salvador de Jujuy"
+    }
    },
    {
     "t_es": "Cultura en comunidad",
@@ -703,7 +805,13 @@
       "en": "Visit to the Rinconadillas community"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -23.78,
+     "lon": -65.45,
+     "es": "Angosto El Pérchel, Jujuy",
+     "en": "Angosto El Pérchel, Jujuy"
+    }
    },
    {
     "t_es": "Activismo ambiental con Carola Rackete y Bojana Novakovic",
@@ -739,7 +847,13 @@
       "en": "Salinas Grandes"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -23.62,
+     "lon": -65.8,
+     "es": "Salinas Grandes, Jujuy",
+     "en": "Salinas Grandes, Jujuy"
+    }
    }
   ]
  },
@@ -785,7 +899,13 @@
       "en": "Victoria and Jeremy with Verónica in Europe"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": 50.8503,
+     "lon": 4.3517,
+     "es": "Bruselas, Europa",
+     "en": "Brussels, Europe"
+    }
    },
    {
     "t_es": "Alianza con el SERPAJ",
@@ -811,7 +931,13 @@
       "en": "Signing of the agreement between Fundación Puna and SERPAJ"
      }
     ],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -34.6,
+     "lon": -58.38,
+     "es": "Buenos Aires",
+     "en": "Buenos Aires"
+    }
    },
    {
     "t_es": "Jornadas de Plantas Medicinales",
@@ -821,7 +947,13 @@
     "text_es": "Junto al programa de radio cannábico de Jujuy, 'La Rama que Llama', se comienzan a organizar las primeras Jornadas de Plantas Medicinales de la provincia, en articulación con la Universidad Nacional de Jujuy.",
     "text_en": "Together with Jujuy's cannabis radio program 'La Rama que Llama', the province's first Medicinal Plants gatherings begin to be organized, in coordination with the National University of Jujuy.",
     "photos": [],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -24.185,
+     "lon": -65.297,
+     "es": "San Salvador de Jujuy",
+     "en": "San Salvador de Jujuy"
+    }
    },
    {
     "t_es": "Amicus Curiae en el caso de la niña Cielo",
@@ -831,7 +963,13 @@
     "text_es": "Fundación Puna articuló una red de organizaciones nacionales e internacionales de derechos humanos, que incluyó al Cyrus R. Vance Center for International Justice (NYC Bar Association) y al Servicio Paz y Justicia (SERPAJ). Esta alianza estratégica intervino institucionalmente mediante la figura de Amicus Curiae en el caso de la niña Cielo (Chaco), promoviendo la correcta aplicación de los estándares de protección de la niñez y la perspectiva de género ante el sistema judicial argentino.",
     "text_en": "Fundación Puna convened a network of national and international human-rights organizations, including the Cyrus R. Vance Center for International Justice (NYC Bar Association) and Servicio Paz y Justicia (SERPAJ). This strategic alliance intervened institutionally through the figure of Amicus Curiae in the case of the child Cielo (Chaco), promoting the correct application of child-protection standards and a gender perspective before the Argentine judicial system.",
     "photos": [],
-    "video": null
+    "video": null,
+    "loc": {
+     "lat": -27.45,
+     "lon": -58.98,
+     "es": "Chaco",
+     "en": "Chaco"
+    }
    }
   ]
  },

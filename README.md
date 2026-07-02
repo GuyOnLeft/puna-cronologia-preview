@@ -1,18 +1,18 @@
 # Camino de Cambio — cronología (preview)
 
-Interactive, **bilingual (ES/EN)** preview of Fundación Puna's history ("Camino de Cambio"),
-built to **help decide a format** before anything goes on the live site.
+Interactive, **bilingual (ES/EN)** preview of Fundación Puna's history ("Camino de Cambio").
+Format **B**: a year selector (2020–2026) with editorial chapters — each community/milestone
+has its narrative, an **auto-running captioned photo carousel**, its **video** (where it exists),
+and a **mini locator map** of the place. Content follows the source cronología doc, milestone by
+milestone.
 
-Four ways to navigate the same content (narrative + captioned photos from the source doc):
+> ⚠️ Standalone preview / decision aid. **Not** connected to punafoundation.org.
 
-- **A** — horizontal carousel
-- **B** — year selector + editorial galleries
-- **C** — alternating vertical timeline
-- **D** — interactive map of the territory (`map.html`) + "más allá del territorio" section
+## Structure
+- `index.html` — the site (static; brand palette; Leaflet locator maps + OSM tiles)
+- `assets/` — web-optimized photos + videos
+- `tools/content_full.py` — milestone content (ES/EN, photos, captions, locations) → writes `tools/years.json`
+- `tools/years.json` — the data
+- `tools/generate_b.py` — renders `index.html` from `years.json`
 
-Videos play in a popup. Photos open captioned in a lightbox.
-
-> ⚠️ This is a **standalone preview / decision aid**. It is **not** connected to
-> punafoundation.org and does not affect the live site.
-
-Static site — just HTML + `assets/`. No build step.
+Rebuild:  `python3 tools/content_full.py && python3 tools/generate_b.py`

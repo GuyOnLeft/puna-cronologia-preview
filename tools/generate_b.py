@@ -11,6 +11,7 @@ DATA = json.dumps(YEARS, ensure_ascii=False)
 HTML='''<!doctype html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Camino de Cambio</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <style>
 :root{--bg:#ffead2;--fg:#2a1f2e;--coral:#ff5a4a;--secondary:#9e69b1;--accent:#79408d;--muted:#78677e;--card:#ffffff;--border:#d8cede;--yc:#ff5a4a}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:"DM Sans",sans-serif;line-height:1.55}
@@ -40,6 +41,11 @@ a{color:inherit}
 .chapter .txt p{color:var(--fg);opacity:.9;font-size:15.5px;margin:0 0 14px}
 .vid{margin-top:12px}.vid video{width:100%;border-radius:12px;display:block;background:#2a1f2e}
 .vid .vcap{font-size:12px;color:var(--muted);margin-top:6px}
+.miniwrap{margin-top:14px}
+.minimap{height:168px;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:#e7dcea}
+.miniloc{font-size:12px;color:var(--muted);margin-top:6px;font-weight:600}
+.minipin{width:16px;height:16px;border-radius:50% 50% 50% 0;background:var(--coral);transform:rotate(-45deg);border:2px solid #fff;box-shadow:0 2px 5px #0006}
+.leaflet-container{font-family:"DM Sans",sans-serif}
 .carousel{position:relative;border-radius:16px;overflow:hidden;background:#2a1f2e;box-shadow:0 20px 50px -30px #0007}
 .track{display:flex;transition:transform .6s cubic-bezier(.22,.61,.36,1)}
 .slide{min-width:100%;position:relative}
@@ -60,7 +66,6 @@ a{color:inherit}
 <div class="nav"><b>Camino de Cambio</b>
   <span style="font-size:12px;opacity:.6" data-es="borrador · formato B" data-en="draft · format B">borrador · formato B</span>
   <span class="sp"></span>
-  <a class="map" href="map.html" data-es="ver mapa ↗" data-en="view map ↗">ver mapa ↗</a>
   <div class="toggle"><button data-lang="es" class="on">ES</button><button data-lang="en">EN</button></div>
 </div>
 <div class="hero">
@@ -70,12 +75,29 @@ a{color:inherit}
 <div class="tabs" id="tabs"></div>
 <div class="ybody" id="ybody"></div>
 <div class="foot" data-es="Vista previa de diseño · Fundación Puna" data-en="Design preview · Fundación Puna">Vista previa · Fundación Puna</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const YEARS=__DATA__;
 let LANG='es', activeYear=YEARS[0].year;
 const tabsEl=document.getElementById('tabs'), body=document.getElementById('ybody');
-let timers=[];
+let timers=[], minimaps=[];
 function clearTimers(){timers.forEach(t=>clearInterval(t));timers=[];}
+function clearMaps(){minimaps.forEach(m=>{try{m.remove();}catch(e){}});minimaps=[];}
+function miniHTML(it){
+  if(!it.loc) return '';
+  return `<div class="miniwrap"><div class="minimap" data-lat="${it.loc.lat}" data-lon="${it.loc.lon}"></div>`+
+    `<div class="miniloc">📍 ${it.loc[LANG]}</div></div>`;
+}
+function initMaps(){
+  document.querySelectorAll('.minimap').forEach(el=>{
+    const lat=+el.dataset.lat, lon=+el.dataset.lon;
+    const m=L.map(el,{zoomControl:false,scrollWheelZoom:false,dragging:false,doubleClickZoom:false,boxZoom:false,keyboard:false,attributionControl:false,tap:false}).setView([lat,lon],9);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:14}).addTo(m);
+    L.marker([lat,lon],{icon:L.divIcon({className:'',html:'<div class="minipin"></div>',iconSize:[16,16],iconAnchor:[8,16]})}).addTo(m);
+    setTimeout(()=>m.invalidateSize(),30);
+    minimaps.push(m);
+  });
+}
 function carouselHTML(it,cid){
   const slides=it.photos.map(p=>`<figure class="slide"><img loading="lazy" src="${p.u}" alt=""><figcaption>${p[LANG]}</figcaption></figure>`).join('');
   const dots=it.photos.map((_,i)=>`<i data-g="${i}" class="${i===0?'on':''}"></i>`).join('');
@@ -101,11 +123,12 @@ function renderYear(){
   y.items.forEach((it,idx)=>{const cid=`c_${y.year}_${idx}`; const hasPh=it.photos.length>0;
     html+=`<div class="chapter${hasPh?'':' solo'}" style="--yc:${y.color}"><div class="txt">`+
       (it['sub_'+LANG]?`<div class="isub">${it['sub_'+LANG]}</div>`:`<div class="isub">${y.year}</div>`)+
-      `<h3>${it['t_'+LANG]}</h3><p>${it['text_'+LANG]}</p>${videoHTML(it)}</div>`+
+      `<h3>${it['t_'+LANG]}</h3><p>${it['text_'+LANG]}</p>${videoHTML(it)}${miniHTML(it)}</div>`+
       (hasPh?`<div>${carouselHTML(it,cid)}</div>`:'')+`</div>`;});
+  clearTimers(); clearMaps();
   body.innerHTML=html;
-  clearTimers();
   y.items.forEach((it,idx)=>{if(it.photos.length>1)initCarousel(`c_${y.year}_${idx}`, it.photos.length);});
+  initMaps();
   window.scrollTo({top:0});
 }
 function initCarousel(id,n){

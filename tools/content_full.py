@@ -264,14 +264,45 @@ MILES=[
   "ph":[]},
 ]
 
+# per-section location -> mini map (lat, lon, place_es, place_en). Only where a real place exists.
+LOC={
+ "Apoyo educativo durante la pandemia":(-23.20,-65.95,"Barrancas, Jujuy","Barrancas, Jujuy"),
+ "Salud y territorio durante la pandemia":(-23.42,-66.57,"Susques, Jujuy","Susques, Jujuy"),
+ "Organización colectiva":(-23.92,-65.47,"Volcán, Jujuy","Volcán, Jujuy"),
+ "Santuario de Tres Pozos":(-23.63,-65.75,"Santuario de Tres Pozos, Jujuy","Santuario de Tres Pozos, Jujuy"),
+ "Rinconadillas":(-23.66,-65.70,"Rinconadillas, Jujuy","Rinconadillas, Jujuy"),
+ "San Francisco de Alfarcito":(-23.83,-65.50,"San Francisco de Alfarcito, Jujuy","San Francisco de Alfarcito, Jujuy"),
+ "Sausalito · la cuestión del agua":(-23.55,-65.72,"Sausalito, Jujuy","Sausalito, Jujuy"),
+ "Tusaquillas":(-22.95,-65.95,"Tusaquillas, Jujuy","Tusaquillas, Jujuy"),
+ "Santa Ana":(-23.33,-65.30,"Santa Ana, Jujuy","Santa Ana, Jujuy"),
+ "Barrancas":(-23.20,-65.95,"Barrancas, Jujuy","Barrancas, Jujuy"),
+ "Regreso a Rinconadillas y Ojo de Agua":(-23.66,-65.70,"Rinconadillas · Ojo de Agua, Jujuy","Rinconadillas · Ojo de Agua, Jujuy"),
+ "Corte y permanencia en Purmamarca":(-23.745,-65.50,"Purmamarca, Jujuy","Purmamarca, Jujuy"),
+ "Apoyo ante la represión — Lian Lamas":(-34.60,-58.38,"Buenos Aires","Buenos Aires"),
+ "Tercer Malón de la Paz":(-34.60,-58.38,"Buenos Aires","Buenos Aires"),
+ "Verónica Chávez y James Cameron":(-34.60,-58.38,"Buenos Aires","Buenos Aires"),
+ "En las calles":(-24.185,-65.297,"San Salvador de Jujuy","San Salvador de Jujuy"),
+ "Cumbre del Agua":(-24.185,-65.297,"San Salvador de Jujuy","San Salvador de Jujuy"),
+ "Cultura en comunidad":(-23.78,-65.45,"Angosto El Pérchel, Jujuy","Angosto El Pérchel, Jujuy"),
+ "Activismo ambiental con Carola Rackete y Bojana Novakovic":(-23.62,-65.80,"Salinas Grandes, Jujuy","Salinas Grandes, Jujuy"),
+ "Cumbre de Energías Limpias · Parlamento Europeo":(50.8503,4.3517,"Bruselas, Europa","Brussels, Europe"),
+ "Alianza con el SERPAJ":(-34.60,-58.38,"Buenos Aires","Buenos Aires"),
+ "Jornadas de Plantas Medicinales":(-24.185,-65.297,"San Salvador de Jujuy","San Salvador de Jujuy"),
+ "Amicus Curiae en el caso de la niña Cielo":(-27.45,-58.98,"Chaco","Chaco"),
+}
 # group -> years.json (structure generate_b.py expects)
 order=["2020","2021","2022","2023","2024","2025","2026"]
 YEARS=[]
 for y in order:
     c,les,len_,ies,ien=YMETA[y]
-    items=[{"t_es":m["t_es"],"t_en":m["t_en"],"sub_es":"","sub_en":"",
+    items=[]
+    for m in MILES:
+        if m["y"]!=y: continue
+        it={"t_es":m["t_es"],"t_en":m["t_en"],"sub_es":"","sub_en":"",
             "text_es":m["x_es"],"text_en":m["x_en"],"photos":m["ph"],"video":m.get("video")}
-           for m in MILES if m["y"]==y]
+        L=LOC.get(m["t_es"])
+        if L: it["loc"]={"lat":L[0],"lon":L[1],"es":L[2],"en":L[3]}
+        items.append(it)
     YEARS.append({"year":y,"color":c,"label_es":les,"label_en":len_,"intro_es":ies,"intro_en":ien,"items":items})
 
 (pathlib.Path(__file__).parent/"years.json").write_text(json.dumps(YEARS,ensure_ascii=False,indent=1))

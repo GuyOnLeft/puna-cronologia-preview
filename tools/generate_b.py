@@ -52,6 +52,9 @@ a{color:inherit}
 .dots i.on{background:#fff;width:20px;border-radius:6px}
 .counter{position:absolute;top:12px;left:14px;background:#0007;color:#fff;font-size:11px;padding:3px 9px;border-radius:999px}
 @media(max-width:820px){.chapter{grid-template-columns:1fr;gap:16px}.slide img{height:52vh}}
+.chapter.solo{grid-template-columns:1fr;max-width:860px}
+.soon{padding:16px 0 46px}
+.soon-badge{display:inline-block;color:#fff;font-weight:700;font-size:13px;padding:8px 18px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
 .foot{background:#2a1f2e;color:#ffffffaa;text-align:center;padding:26px;font-size:13px}
 </style></head><body>
 <div class="nav"><b>Camino de Cambio</b>
@@ -63,7 +66,6 @@ a{color:inherit}
 <div class="hero">
   <div class="eyebrow" data-es="Nuestro Impacto" data-en="Our Impact">Nuestro Impacto</div>
   <h1>Camino de Cambio</h1>
-  <p data-es="Cinco años caminando junto a las comunidades de la Puna y la Quebrada de Jujuy — y más allá." data-en="Five years walking alongside the communities of the Puna and Quebrada of Jujuy — and beyond.">Cinco años…</p>
 </div>
 <div class="tabs" id="tabs"></div>
 <div class="ybody" id="ybody"></div>
@@ -93,14 +95,17 @@ function renderYear(){
     b.style.background=on?y.color:'var(--card)';b.style.color=on?'#fff':'var(--fg)';b.style.borderColor=on?'transparent':'var(--border)';});
   let html=`<div class="yhead" style="--yc:${y.color}"><div class="ynum">${y.year}</div><div class="ylabel">${y['label_'+LANG]}</div></div>`+
            `<p class="yintro">${y['intro_'+LANG]||''}</p>`;
-  y.items.forEach((it,idx)=>{const cid=`c_${y.year}_${idx}`;
-    html+=`<div class="chapter" style="--yc:${y.color}"><div class="txt">`+
+  if(!y.items.length){
+    html+=`<div class="soon"><span class="soon-badge" style="background:${y.color}">${LANG==='es'?'Próximamente':'Coming soon'}</span></div>`;
+  }
+  y.items.forEach((it,idx)=>{const cid=`c_${y.year}_${idx}`; const hasPh=it.photos.length>0;
+    html+=`<div class="chapter${hasPh?'':' solo'}" style="--yc:${y.color}"><div class="txt">`+
       (it['sub_'+LANG]?`<div class="isub">${it['sub_'+LANG]}</div>`:`<div class="isub">${y.year}</div>`)+
       `<h3>${it['t_'+LANG]}</h3><p>${it['text_'+LANG]}</p>${videoHTML(it)}</div>`+
-      `<div>${carouselHTML(it,cid)}</div></div>`;});
+      (hasPh?`<div>${carouselHTML(it,cid)}</div>`:'')+`</div>`;});
   body.innerHTML=html;
   clearTimers();
-  y.items.forEach((it,idx)=>initCarousel(`c_${y.year}_${idx}`, it.photos.length));
+  y.items.forEach((it,idx)=>{if(it.photos.length>1)initCarousel(`c_${y.year}_${idx}`, it.photos.length);});
   window.scrollTo({top:0});
 }
 function initCarousel(id,n){

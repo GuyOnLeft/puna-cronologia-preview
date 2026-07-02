@@ -4,17 +4,43 @@
   "color": "#ff5a4a",
   "label_es": "Nuestros orígenes",
   "label_en": "Our beginnings",
-  "intro_es": "En el contexto de la pandemia de COVID-19, el encuentro entre Yamil, Victoria y Pablo terminaría dando origen a Fundación Puna y a las primeras redes de trabajo colectivo junto a las comunidades de su provincia.",
+  "intro_es": "En el contexto de la pandemia de COVID-19, el encuentro entre Yamil, Victoria y Pablo terminaría dando origen a Fundación Puna y a las primeras redes de trabajo colectivo de la organización junto a las comunidades de su provincia.",
   "intro_en": "Amid the COVID-19 pandemic, the meeting of Yamil, Victoria and Pablo would give rise to Fundación Puna and to the organization's first networks of collective work alongside the communities of its province.",
   "items": [
    {
-    "t_es": "Susques · salud comunitaria",
-    "t_en": "Susques · community health",
+    "t_es": "Apoyo educativo durante la pandemia",
+    "t_en": "Educational support during the pandemic",
     "sub_es": "",
     "sub_en": "",
-    "text_es": "Victoria Araya, estudiante de medicina, regresa a Jujuy y se suma como voluntaria al sistema de salud, recorriendo muchos pueblos de la Quebrada y la Puna. Allí evidencia que la urgencia no era solamente el COVID-19, sino desigualdades estructurales mucho más profundas: la falta de agua, de acceso a la educación, de conectividad y de derechos básicos.",
-    "text_en": "Victoria Araya, a medical student, returns to Jujuy and volunteers in the health system, traveling through many villages of the Quebrada and Puna. There she sees that the emergency was not only COVID-19, but far deeper structural inequalities: the lack of water, education, connectivity and basic rights.",
+    "text_es": "Durante la pandemia, Yamil Alejo, un joven estudiante de ingeniería oriundo de Barrancas, regresa a su comunidad y detecta una problemática urgente: la falta de conectividad estaba dejando a muchos niños y jóvenes fuera del sistema educativo. Frente a esa realidad, comienza a organizar clases de apoyo y acompañamiento escolar utilizando los recursos que tenía a mano —celulares, cuadernos y espacios comunitarios— para sostener redes educativas y que muchos estudiantes pudieran continuar aprendiendo en medio del aislamiento.",
+    "text_en": "During the pandemic, Yamil Alejo, a young engineering student from Barrancas, returns to his community and spots an urgent problem: the lack of connectivity was leaving many children and youth outside the school system. In response, he begins organizing tutoring and school support using whatever was at hand —phones, notebooks and community spaces— to sustain learning networks so that many students could keep learning through the isolation.",
     "photos": [
+     {
+      "u": "assets/2020__yamil-01.jpg",
+      "es": "Nota periodística sobre las clases de apoyo de Yamil",
+      "en": "News feature on Yamil's tutoring"
+     },
+     {
+      "u": "assets/2020__yamil-02.jpg",
+      "es": "Clases de apoyo escolar durante el aislamiento",
+      "en": "School tutoring during the isolation"
+     }
+    ],
+    "video": null
+   },
+   {
+    "t_es": "Salud y territorio durante la pandemia",
+    "t_en": "Health and territory during the pandemic",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "En ese mismo contexto, Victoria Araya, una estudiante de medicina, decide regresar a Jujuy con la intención de reconectar con sus orígenes. Al volver, se suma como voluntaria al sistema de salud, donde recorre muchos pueblos de la Quebrada y la Puna jujeña. A través de esa experiencia comienza a evidenciar que la urgencia no era solamente el COVID-19, sino también desigualdades estructurales mucho más profundas: la falta de agua, de acceso a la educación, de conectividad y de derechos básicos en muchas comunidades de la provincia.",
+    "text_en": "In that same context, Victoria Araya, a medical student, decides to return to Jujuy to reconnect with her roots. Back home, she volunteers in the health system, traveling through many villages of the Quebrada and the Jujuy Puna. Through that experience she begins to see that the emergency was not only COVID-19, but far deeper structural inequalities: the lack of water, education, connectivity and basic rights in many communities of the province.",
+    "photos": [
+     {
+      "u": "assets/2020__img-3788.jpg",
+      "es": "Victoria Araya recorriendo los pueblos de la Quebrada y la Puna",
+      "en": "Victoria Araya visiting the villages of the Quebrada and Puna"
+     },
      {
       "u": "assets/2020__victoria-01.jpg",
       "es": "Voluntarios de salud frente al Hospital de Susques",
@@ -24,11 +50,22 @@
       "u": "assets/2020__victoria-02.jpg",
       "es": "Victoria Araya, voluntaria de salud en la Puna",
       "en": "Victoria Araya, health volunteer in the Puna"
-     },
+     }
+    ],
+    "video": null
+   },
+   {
+    "t_es": "El encuentro entre Victoria, Yamil y Pablo",
+    "t_en": "The meeting of Victoria, Yamil and Pablo",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "En 2020, en medio de la pandemia, los caminos de Victoria Araya, Yamil Alejo y Pablo Agüero se cruzan a partir de las iniciativas comunitarias que cada uno venía impulsando por separado en Jujuy. El encuentro entre los tres permitió unir fuerzas, miradas y formas de organización que terminarían dando origen a Fundación Puna. Desde entonces, Victoria, Yamil y Pablo continúan integrando la organización como sus miembros fundadores.",
+    "text_en": "In 2020, mid-pandemic, the paths of Victoria Araya, Yamil Alejo and Pablo Agüero cross through the community initiatives each had been driving separately in Jujuy. Their meeting joined forces, perspectives and ways of organizing that would give rise to Fundación Puna. Since then, Victoria, Yamil and Pablo remain part of the organization as its founding members.",
+    "photos": [
      {
-      "u": "assets/2020__img-3788.jpg",
-      "es": "Recorriendo los pueblos de la Quebrada y la Puna",
-      "en": "Traveling through the villages of the Quebrada and Puna"
+      "u": "assets/2020__victoria-03.jpg",
+      "es": "Victoria, Yamil y Pablo — miembros fundadores de Fundación Puna",
+      "en": "Victoria, Yamil and Pablo — founding members of Fundación Puna"
      }
     ],
     "video": null
@@ -43,6 +80,32 @@
   "intro_es": "Con la reapertura de rutas, se organiza el primer viaje a las comunidades de la cuenca de Salinas Grandes. A partir de una colecta solidaria se reunieron útiles escolares y alimentos para recorrer siete comunidades de Jujuy en un solo fin de semana, visibilizando las desigualdades estructurales en torno al agua, la infraestructura y los derechos básicos.",
   "intro_en": "As the roads reopened, the first trip to the communities of the Salinas Grandes basin was organized. A solidarity drive gathered school supplies and food to visit seven communities of Jujuy in a single weekend, making visible the structural inequalities around water, infrastructure and basic rights.",
   "items": [
+   {
+    "t_es": "Organización colectiva",
+    "t_en": "Collective organizing",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "Antes del viaje, Fundación Puna impulsa una colecta junto a voluntarios, familias y redes cercanas. Olga Cabrera, anciana originaria del pueblo de Volcán y abuela de Victoria Araya, tuvo un rol fundamental sugiriendo ideas y ayudando a armar cada bolsita con útiles, golosinas y materiales destinados a los niños de cada comunidad. Ese trabajo, sostenido desde el cuidado y la dedicación, también formó parte del espíritu colectivo de Puna.",
+    "text_en": "Before the trip, Fundación Puna runs a collection with volunteers, families and close networks. Olga Cabrera —an elder from the town of Volcán and Victoria Araya's grandmother— played a key role suggesting ideas and helping assemble each bag of supplies, treats and materials for the children of every community. That work, grounded in care and dedication, was also part of Puna's collective spirit.",
+    "photos": [
+     {
+      "u": "assets/2021-pre-viaje-a-la-puna-seleccion-de-fotos__img-9677.jpg",
+      "es": "Donaciones recolectadas",
+      "en": "Donations gathered"
+     },
+     {
+      "u": "assets/2021-pre-viaje-a-la-puna-seleccion-de-fotos__img-9680.jpg",
+      "es": "Victoria y Olga preparando todo para el viaje",
+      "en": "Victoria and Olga getting everything ready for the trip"
+     },
+     {
+      "u": "assets/2021-pre-viaje-a-la-puna-seleccion-de-fotos__img-9696.jpg",
+      "es": "Olga limpiando y ordenando donaciones",
+      "en": "Olga cleaning and sorting the donations"
+     }
+    ],
+    "video": null
+   },
    {
     "t_es": "Santuario de Tres Pozos",
     "t_en": "Santuario de Tres Pozos",
@@ -297,14 +360,9 @@
     "t_en": "Barrancas",
     "sub_es": "",
     "sub_en": "",
-    "text_es": "Barrancas es la comunidad natal de Yamil Alejo y el lugar donde comenzaron las primeras redes de acompañamiento educativo durante la pandemia. El recorrido de 2021 finalizó aquí, con meriendas, juegos y espacios comunitarios que cerraron el viaje reafirmando el vínculo entre Fundación Puna y las comunidades de la región.",
-    "text_en": "Barrancas is Yamil Alejo's home community and the place where the first educational-support networks began during the pandemic. The 2021 journey ended here, with snacks, games and community spaces that closed the trip, reaffirming the bond between Fundación Puna and the region's communities.",
+    "text_es": "El recorrido finalizó en Barrancas, comunidad natal de Yamil Alejo y lugar donde habían comenzado las primeras redes de acompañamiento educativo durante la pandemia. La jornada incluyó meriendas, juegos y espacios comunitarios que cerraron el viaje reafirmando el vínculo entre Fundación Puna y las comunidades de la región.",
+    "text_en": "The route ended in Barrancas, Yamil Alejo's home community and the place where the first educational-support networks had begun during the pandemic. The day included snacks, games and community spaces that closed the trip, reaffirming the bond between Fundación Puna and the region's communities.",
     "photos": [
-     {
-      "u": "assets/2020__yamil-02.jpg",
-      "es": "Yamil Alejo · clases de apoyo escolar (2020)",
-      "en": "Yamil Alejo · school tutoring (2020)"
-     },
      {
       "u": "assets/2021-barrancas-seleccion__img-0592.jpg",
       "es": "Actividad en la comunidad de Barrancas",
@@ -349,12 +407,12 @@
     "video": null
    },
    {
-    "t_es": "Rinconadillas · Ojo de Agua (fin de año)",
-    "t_en": "Rinconadillas · Ojo de Agua (year-end)",
+    "t_es": "Regreso a Rinconadillas y Ojo de Agua",
+    "t_en": "Return to Rinconadillas and Ojo de Agua",
     "sub_es": "",
     "sub_en": "",
-    "text_es": "Hacia finales de 2021, Fundación Puna realiza un nuevo viaje a la región. El recorrido incluyó una segunda visita a Rinconadillas y un paso por Ojo del Agua, donde el equipo conoció de cerca las dificultades vinculadas al acceso al agua: el encuentro con familias que debían recolectarla manualmente reforzó aún más la importancia de esta problemática dentro del trabajo de la fundación.",
-    "text_en": "Toward the end of 2021, Fundación Puna made a new trip to the region. The route included a second visit to Rinconadillas and a stop at Ojo del Agua, where the team saw up close the difficulties tied to water access: meeting families who had to collect it by hand further reinforced the importance of this issue in the foundation's work.",
+    "text_es": "Hacia finales de 2021, Fundación Puna realiza un nuevo viaje a la región, fortaleciendo los vínculos construidos durante los primeros recorridos. El viaje incluyó una segunda visita a Rinconadillas y un recorrido por Ojo del Agua, donde el equipo conoció de cerca las dificultades cotidianas vinculadas al acceso al agua. El encuentro con familias que debían recolectarla manualmente reforzó aún más la importancia de esta problemática dentro del trabajo de la fundación.",
+    "text_en": "Toward the end of 2021, Fundación Puna made a new trip to the region, strengthening the bonds built during the first journeys. The trip included a second visit to Rinconadillas and a stop at Ojo del Agua, where the team saw up close the everyday difficulties tied to water access. Meeting families who had to collect it by hand further reinforced the importance of this issue in the foundation's work.",
     "photos": [
      {
       "u": "assets/2021-rinconadillas-la-vuelta-fin-de-ano-seleccion__img-1071.jpg",
@@ -363,6 +421,11 @@
      },
      {
       "u": "assets/2021-rinconadillas-la-vuelta-fin-de-ano-seleccion__img-1111.jpg",
+      "es": "Victoria Araya y Jeremy Munson en Rinconadillas",
+      "en": "Victoria Araya and Jeremy Munson in Rinconadillas"
+     },
+     {
+      "u": "assets/2021-rinconadillas-la-vuelta-fin-de-ano-seleccion__img-1224.jpg",
       "es": "Victoria Araya y Jeremy Munson en Rinconadillas",
       "en": "Victoria Araya and Jeremy Munson in Rinconadillas"
      },
@@ -383,24 +446,66 @@
      }
     ],
     "video": null
+   },
+   {
+    "t_es": "Clases de inglés online",
+    "t_en": "Online English classes",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "En esta etapa se suma como miembro Jeremy Munson, quien comienza a colaborar impulsando clases de inglés para jóvenes de las comunidades con las que Fundación Puna trabaja.",
+    "text_en": "In this period Jeremy Munson joins as a member, beginning to collaborate by driving English classes for youth in the communities Fundación Puna works with.",
+    "photos": [
+     {
+      "u": "assets/2021-rinconadillas-la-vuelta-fin-de-ano-seleccion__img-8734.jpg",
+      "es": "Victoria Araya y Jeremy Munson — clases de inglés online",
+      "en": "Victoria Araya and Jeremy Munson — online English classes"
+     }
+    ],
+    "video": null
+   }
+  ]
+ },
+ {
+  "year": "2022",
+  "color": "#79408d",
+  "label_es": "Un año de consolidación",
+  "label_en": "A year of consolidation",
+  "intro_es": "La Fundación se enfoca en fortalecer su identidad. Con el aporte de Lorenzo Ramicone se desarrolla el logotipo y la identidad visual. Se sostienen las acciones educativas a distancia y la difusión de las problemáticas de las comunidades de la Puna: un año de base para ordenar y proyectar a futuro.",
+  "intro_en": "The Foundation focuses on strengthening its identity. With Lorenzo Ramicone's contribution, the logo and visual identity take shape. Remote education and outreach about the Puna communities' struggles continue — a foundational year to organize and look ahead.",
+  "items": [
+   {
+    "t_es": "Identidad visual",
+    "t_en": "Visual identity",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "Durante este año la Fundación se enfocó en fortalecer su identidad. Con el aporte de Lorenzo Ramicone se desarrolla el logotipo y la identidad visual, dando forma a una imagen más clara y coherente. A la par, se sostienen las acciones educativas a distancia y la difusión de las problemáticas que atraviesan las comunidades de la Puna. Así, 2022 se vuelve un año de base para ordenar y proyectar a futuro.",
+    "text_en": "During this year the Foundation focused on strengthening its identity. With Lorenzo Ramicone's contribution, the logo and visual identity are developed, giving shape to a clearer, more coherent image. In parallel, remote education and outreach about the Puna communities' struggles continue. Thus 2022 becomes a foundational year to organize and project into the future.",
+    "photos": [
+     {
+      "u": "assets/2022__victoria-y-yamil.jpg",
+      "es": "Victoria y Yamil",
+      "en": "Victoria and Yamil"
+     }
+    ],
+    "video": null
    }
   ]
  },
  {
   "year": "2023",
-  "color": "#79408d",
+  "color": "#ff5a4a",
   "label_es": "Reforma inconstitucional",
   "label_en": "Unconstitutional reform",
-  "intro_es": "Un año marcado por un fuerte conflicto social, político e institucional a partir de una reforma de la constitución provincial que restringía el derecho a la protesta y la propiedad comunitaria de la tierra. La defensa del territorio, el agua y los derechos humanos toman un rol protagónico en la Fundación.",
-  "intro_en": "A year marked by intense social, political and institutional conflict over a provincial constitutional reform that restricted the right to protest and communal land ownership. The defense of territory, water and human rights took center stage for the Foundation.",
+  "intro_es": "El 2023 estuvo marcado por un fuerte conflicto social, político e institucional a partir de una reforma de la constitución provincial que restringía el derecho a la protesta y la propiedad comunitaria de la tierra. La defensa del territorio, el agua y los derechos humanos toman un rol protagónico dentro de la Fundación.",
+  "intro_en": "2023 was marked by intense social, political and institutional conflict over a provincial constitutional reform that restricted the right to protest and communal land ownership. The defense of territory, water and human rights took center stage for the Foundation.",
   "items": [
    {
-    "t_es": "Cruce de Purmamarca · Reforma inconstitucional",
-    "t_en": "Purmamarca crossroads · Unconstitutional reform",
+    "t_es": "Corte y permanencia en Purmamarca",
+    "t_en": "Blockade and encampment in Purmamarca",
     "sub_es": "",
     "sub_en": "",
-    "text_es": "En junio de 2023, en Purmamarca, tuvo lugar uno de los episodios más significativos de la reforma inconstitucional: el corte y permanencia en la Ruta Nacional 9, que duró más de dos meses. Comunidades indígenas, docentes y trabajadores se manifestaron en defensa de sus derechos y la respuesta estatal fue represiva. Fundación Puna acompañó de cerca a muchas víctimas de la represión con apoyo económico y logístico, y dio hospedaje en Buenos Aires a integrantes del Tercer Malón de la Paz.",
-    "text_en": "In June 2023, in Purmamarca, one of the most significant episodes of the unconstitutional reform took place: the blockade and encampment on National Route 9, which lasted more than two months. Indigenous communities, teachers and workers demonstrated in defense of their rights and the state response was repressive. Fundación Puna accompanied many victims of the repression with financial and logistical support, and hosted members of the Third Malón de la Paz in Buenos Aires.",
+    "text_es": "En junio, en Purmamarca, tuvo lugar uno de los episodios más significativos: el corte y permanencia en la Ruta Nacional 9, que duró más de dos meses. Comunidades indígenas, docentes y trabajadores se manifestaron en defensa de sus derechos y la respuesta estatal fue represiva, con balas de goma, gases lacrimógenos y detenciones constantes. Fundación Puna acompañó de cerca a muchas de las víctimas ofreciendo apoyo económico y logístico.",
+    "text_en": "In June, in Purmamarca, one of the most significant episodes took place: the blockade and encampment on National Route 9, which lasted more than two months. Indigenous communities, teachers and workers demonstrated in defense of their rights and the state response was repressive, with rubber bullets, tear gas and constant detentions. Fundación Puna accompanied many of the victims with financial and logistical support.",
     "photos": [
      {
       "u": "assets/2023-tercer-malon-de-la-paz-en-buenos-aires-yamil__9b3f8a62-e2ca-4605-89c6-16b8da8b6eb8.jpg",
@@ -436,12 +541,38 @@
     "video": null
    },
    {
+    "t_es": "Apoyo ante la represión — Lian Lamas",
+    "t_en": "Support amid the repression — Lian Lamas",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "La violencia estatal dejó heridas físicas y emocionales profundas. Entre los casos más graves se encuentran Lian Lamas, un joven de 17 años que perdió un ojo tras recibir un disparo policial, y Joel Paredes, quien también sufrió daños irreparables. Frente a estas situaciones, Fundación Puna acompañó a las víctimas ofreciendo apoyo económico y logístico, y dando hospedaje en Buenos Aires para sus consultas médicas.",
+    "text_en": "State violence left deep physical and emotional wounds. Among the gravest cases are Lian Lamas, a 17-year-old who lost an eye after a police shot, and Joel Paredes, who also suffered irreparable damage. In response, Fundación Puna accompanied the victims with financial and logistical support, and hosted them in Buenos Aires for their medical care.",
+    "photos": [
+     {
+      "u": "assets/2023-lian-lamas__img-8362.jpg",
+      "es": "Lian Lamas",
+      "en": "Lian Lamas"
+     },
+     {
+      "u": "assets/2023-lian-lamas__img-7865.jpg",
+      "es": "Lian Lamas en la casa de Fundación Puna en Buenos Aires",
+      "en": "Lian Lamas at Fundación Puna's house in Buenos Aires"
+     },
+     {
+      "u": "assets/2023-lian-lamas__b73d1497-0b61-408b-8388-d77a2c226fcf.jpg",
+      "es": "Lian Lamas con Estela de Carlotto",
+      "en": "Lian Lamas with Estela de Carlotto"
+     }
+    ],
+    "video": null
+   },
+   {
     "t_es": "Tercer Malón de la Paz",
     "t_en": "Third Malón de la Paz",
-    "sub_es": "Buenos Aires",
-    "sub_en": "Buenos Aires",
-    "text_es": "Más de 400 comunidades originarias se organizaron en el Tercer Malón de la Paz, una movilización histórica que recorrió más de 1.800 km desde La Quiaca hasta Buenos Aires para llevar el reclamo a la Corte Suprema de Justicia. Yamil Alejo asumió un rol de liderazgo entre los jóvenes del movimiento; Fundación Puna colaboró en la logística, la posta de salud y la visibilización nacional e internacional.",
-    "text_en": "More than 400 Indigenous communities organized the Third Malón de la Paz, a historic mobilization that traveled over 1,800 km from La Quiaca to Buenos Aires to bring their claim to the Supreme Court of Justice. Yamil Alejo took on a leadership role among the movement's youth; Fundación Puna supported logistics, the first-aid post and national and international visibility.",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "Frente a la gravedad de la situación, más de 400 comunidades originarias se organizaron en el Tercer Malón de la Paz, una movilización histórica que recorrió más de 1.800 km desde La Quiaca hasta Buenos Aires para llevar el reclamo a la Corte Suprema de Justicia. Yamil Alejo asumió un rol de liderazgo entre los jóvenes del movimiento. Fundación Puna colaboró en la logística, el apoyo en la posta de salud y la visibilización del conflicto a nivel nacional e internacional.",
+    "text_en": "Given the gravity of the situation, more than 400 Indigenous communities organized the Third Malón de la Paz, a historic mobilization that traveled over 1,800 km from La Quiaca to Buenos Aires to bring their claim to the Supreme Court of Justice. Yamil Alejo took on a leadership role among the movement's youth. Fundación Puna supported logistics, the first-aid post and national and international visibility of the conflict.",
     "photos": [
      {
       "u": "assets/2023-tercer-malon-de-la-paz-en-buenos-aires-yamil__img-20230729-wa0065.jpg",
@@ -469,8 +600,8 @@
    {
     "t_es": "Verónica Chávez y James Cameron",
     "t_en": "Verónica Chávez and James Cameron",
-    "sub_es": "Buenos Aires",
-    "sub_en": "Buenos Aires",
+    "sub_es": "",
+    "sub_en": "",
     "text_es": "Con el acompañamiento de Fundación Puna, Verónica Chávez, representante de la Comunidad Santuario Tres Pozos, se reunió en Buenos Aires con el cineasta y activista ambiental James Cameron, y expuso de primera mano cómo el avance de la extracción de litio afecta los territorios, el acceso al agua y las formas de vida en la Puna. Victoria Araya participó como traductora, proyectando la voz de la comunidad a escala internacional.",
     "text_en": "With Fundación Puna's support, Verónica Chávez, representative of the Santuario Tres Pozos community, met in Buenos Aires with filmmaker and environmental activist James Cameron, and showed first-hand how the advance of lithium extraction affects the territories, water access and ways of life in the Puna. Victoria Araya took part as translator, projecting the community's voice on an international scale.",
     "photos": [
@@ -506,19 +637,81 @@
  },
  {
   "year": "2024",
-  "color": "#ff5a4a",
+  "color": "#9e69b1",
   "label_es": "Lucha, cultura y crecimiento",
   "label_en": "Struggle, culture and growth",
   "intro_es": "Una etapa de mayor consolidación que combina el trabajo territorial con la articulación política, el fortalecimiento cultural y nuevas iniciativas. La educación continúa como eje, con clases de inglés y espacios vinculados a derechos humanos.",
   "intro_en": "A stage of greater consolidation combining territorial work with political articulation, cultural strengthening and new initiatives. Education remains a core axis, with English classes and human-rights spaces.",
   "items": [
    {
-    "t_es": "Salinas Grandes · redes globales",
-    "t_en": "Salinas Grandes · global networks",
+    "t_es": "En las calles",
+    "t_en": "In the streets",
     "sub_es": "",
     "sub_en": "",
-    "text_es": "Hacia octubre de 2024, la eurodiputada Carola Rackete y la actriz y activista serbia Bojana Novakovic recorren la región y se vinculan con las comunidades en el marco de sus agendas de activismo ambiental. Su presencia aporta visibilidad y un gesto de acompañamiento que refuerza la importancia de las redes globales en la defensa del territorio.",
-    "text_en": "Around October 2024, MEP Carola Rackete and the Serbian actress and activist Bojana Novakovic tour the region and connect with the communities as part of their environmental-activism agendas. Their presence brings visibility and a gesture of solidarity that reinforces the importance of global networks in defending the territory.",
+    "text_es": "En enero, Fundación Puna reafirma su compromiso con las comunidades de Salinas Grandes acompañando al Tercer Malón de la Paz en el rechazo al DNU 70/2023 impulsado por el gobierno nacional. La participación en movilizaciones y espacios de protesta forma parte de una continuidad en la defensa de derechos, especialmente en relación con el territorio, el agua y las condiciones de vida de las comunidades.",
+    "text_en": "In January, Fundación Puna reaffirms its commitment to the Salinas Grandes communities by accompanying the Third Malón de la Paz in rejecting the national government's Decree 70/2023. Taking part in mobilizations and protests is part of a continuity in defending rights, especially around territory, water and the communities' living conditions.",
+    "photos": [
+     {
+      "u": "assets/2024-marca-24-de-enero__img-3427.jpg",
+      "es": "Victoria Araya y Yamil Alejo en la marcha en San Salvador de Jujuy",
+      "en": "Victoria Araya and Yamil Alejo at the march in San Salvador de Jujuy"
+     },
+     {
+      "u": "assets/2024-marca-24-de-enero__img-3440.jpg",
+      "es": "Reunión de Fundación Puna con miembros del Tercer Malón de la Paz",
+      "en": "Fundación Puna meeting with members of the Third Malón de la Paz"
+     }
+    ],
+    "video": null
+   },
+   {
+    "t_es": "Cumbre del Agua",
+    "t_en": "Water Summit",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "La defensa del agua se consolida como una prioridad. En marzo, Fundación Puna participa en la Cumbre del Agua, un espacio de encuentro entre comunidades originarias, especialistas y activistas, donde se comparten estrategias para proteger los recursos hídricos frente al avance de políticas extractivas.",
+    "text_en": "The defense of water consolidates as a priority. In March, Fundación Puna takes part in the Water Summit, a gathering of Indigenous communities, specialists and activists where strategies are shared to protect water resources against the advance of extractive policies.",
+    "photos": [],
+    "video": null
+   },
+   {
+    "t_es": "Cultura en comunidad",
+    "t_en": "Culture in community",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "La cultura y el vínculo con las comunidades ocupan un lugar central. En febrero, el equipo participa del desentierro de carnaval en la comunidad de Angosto El Pérchel, una ceremonia ancestral que marca el inicio del carnaval andino y refuerza la conexión con la tierra y la vida comunitaria. Además, Fundación Puna visita nuevamente a la comunidad de Rinconadillas.",
+    "text_en": "Culture and the bond with the communities take a central place. In February, the team takes part in the carnival 'unearthing' in the community of Angosto El Pérchel, an ancestral ceremony that marks the start of the Andean carnival and reinforces the connection with the land and community life. Fundación Puna also visits the Rinconadillas community again.",
+    "photos": [
+     {
+      "u": "assets/2024-rinconadillas-2024__img-7540.jpg",
+      "es": "Paisaje de la Puna jujeña",
+      "en": "Landscape of the Jujuy Puna"
+     },
+     {
+      "u": "assets/2024-rinconadillas-2024__img-7675.jpg",
+      "es": "Desentierro de carnaval en Angosto El Pérchel",
+      "en": "Carnival 'unearthing' in Angosto El Pérchel"
+     },
+     {
+      "u": "assets/2024-rinconadillas-2024__img-9087.jpg",
+      "es": "Carnaval andino",
+      "en": "Andean carnival"
+     },
+     {
+      "u": "assets/2024-rinconadillas-2024__img-7593.jpg",
+      "es": "Visita a la comunidad de Rinconadillas",
+      "en": "Visit to the Rinconadillas community"
+     }
+    ],
+    "video": null
+   },
+   {
+    "t_es": "Activismo ambiental con Carola Rackete y Bojana Novakovic",
+    "t_en": "Environmental activism with Carola Rackete and Bojana Novakovic",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "Hacia octubre, la dimensión internacional vuelve a tomar fuerza con la visita de la eurodiputada Carola Rackete y la actriz y activista serbia Bojana Novakovic, quienes recorren la región y se vinculan con las comunidades en el marco de sus agendas de activismo ambiental. Su presencia aporta visibilidad y un gesto de acompañamiento que refuerza la importancia de las redes globales en la defensa del territorio.",
+    "text_en": "Toward October, the international dimension gains strength again with the visit of MEP Carola Rackete and the Serbian actress and activist Bojana Novakovic, who tour the region and connect with the communities as part of their environmental-activism agendas. Their presence brings visibility and a gesture of solidarity that reinforces the importance of global networks in defending the territory.",
     "photos": [
      {
       "u": "assets/2024-carola-y-bojana__img-7781.jpg",
@@ -534,6 +727,16 @@
       "u": "assets/2024-carola-y-bojana__img-7839.jpg",
       "es": "Salinas Grandes",
       "en": "Salinas Grandes"
+     },
+     {
+      "u": "assets/2024-carola-y-bojana__img-7753.jpg",
+      "es": "Recorrido junto a las comunidades",
+      "en": "Touring alongside the communities"
+     },
+     {
+      "u": "assets/2024-carola-y-bojana__img-9238.jpg",
+      "es": "Salinas Grandes",
+      "en": "Salinas Grandes"
      }
     ],
     "video": null
@@ -542,7 +745,7 @@
  },
  {
   "year": "2025",
-  "color": "#9e69b1",
+  "color": "#79408d",
   "label_es": "Expansión y articulación internacional",
   "label_en": "International expansion and alliances",
   "intro_es": "El año de la proyección internacional y la intervención judicial. La Fundación llevó reclamos socioambientales al Parlamento Europeo y sumó alianzas clave con organismos de derechos humanos como el SERPAJ, mientras diversificaba el trabajo territorial hacia la salud comunitaria y la universidad pública.",
@@ -551,10 +754,10 @@
    {
     "t_es": "Cumbre de Energías Limpias · Parlamento Europeo",
     "t_en": "Clean Energy Summit · European Parliament",
-    "sub_es": "Bruselas, Europa",
-    "sub_en": "Brussels, Europe",
-    "text_es": "Fundación Puna gestionó la participación de referentes comunitarios en una cumbre sobre energías limpias en el Parlamento Europeo: Verónica Chávez (Salinas Grandes, Jujuy), Ñushpi Quilla Mayhuay Alancay (Malargüe, Mendoza) y Sergio Martínez (Andalgalá). Cada uno llevó una realidad distinta atravesada por un mismo eje: la defensa del agua y del territorio frente al avance extractivo, poniendo en tensión el discurso de las energías 'limpias' y sus impactos concretos.",
-    "text_en": "Fundación Puna arranged the participation of community leaders in a clean-energy summit at the European Parliament: Verónica Chávez (Salinas Grandes, Jujuy), Ñushpi Quilla Mayhuay Alancay (Malargüe, Mendoza) and Sergio Martínez (Andalgalá). Each brought a distinct reality tied to a shared axis: the defense of water and territory against extractive expansion, challenging the discourse of 'clean' energy and its concrete impacts.",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "Fundación Puna gestiona la participación de referentes comunitarios en una cumbre sobre energías limpias en el Parlamento Europeo: Verónica Chávez (cuenca de Salinas Grandes, Jujuy), Ñushpi Quilla Mayhuay Alancay (Malargüe, Mendoza) y Sergio Martínez (Andalgalá). Cada uno lleva una realidad distinta atravesada por un mismo eje: la defensa del agua y del territorio frente al avance extractivo, poniendo en el centro del debate las tensiones entre el discurso de las energías 'limpias' y sus impactos concretos en los territorios. Sol Felicitas Araya, del área de comunicación, realiza un informe audiovisual que reúne testimonios e imágenes del territorio para amplificar estas voces.",
+    "text_en": "Fundación Puna arranges the participation of community leaders in a clean-energy summit at the European Parliament: Verónica Chávez (Salinas Grandes basin, Jujuy), Ñushpi Quilla Mayhuay Alancay (Malargüe, Mendoza) and Sergio Martínez (Andalgalá). Each brings a distinct reality tied to a shared axis: the defense of water and territory against extractive expansion, bringing to the center of the debate the tensions between the discourse of 'clean' energy and its concrete impacts. Sol Felicitas Araya, from communications, produces a short film gathering testimonies and images of the territory to amplify these voices.",
     "photos": [
      {
       "u": "assets/2025__img-1995.jpg",
@@ -587,10 +790,10 @@
    {
     "t_es": "Alianza con el SERPAJ",
     "t_en": "Alliance with SERPAJ",
-    "sub_es": "Buenos Aires",
-    "sub_en": "Buenos Aires",
-    "text_es": "Fundación Puna firmó un convenio de trabajo con el Servicio Paz y Justicia (SERPAJ), organización fundada por Adolfo Pérez Esquivel, fortaleciendo la cooperación en conflictos territoriales y consolidando un perfil más internacionalista.",
-    "text_en": "Fundación Puna signed a working agreement with Servicio Paz y Justicia (SERPAJ), the organization founded by Adolfo Pérez Esquivel, strengthening cooperation on territorial conflicts and consolidating a more internationalist profile.",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "En paralelo, Fundación Puna firma un convenio de trabajo con el Servicio Paz y Justicia (SERPAJ), organización fundada por Adolfo Pérez Esquivel. Este acuerdo fortalece una línea de acción orientada a la cooperación en conflictos territoriales, ampliando las redes de articulación y consolidando un perfil más internacionalista.",
+    "text_en": "In parallel, Fundación Puna signs a working agreement with Servicio Paz y Justicia (SERPAJ), the organization founded by Adolfo Pérez Esquivel. This agreement strengthens a line of action oriented to cooperation on territorial conflicts, expanding networks and consolidating a more internationalist profile.",
     "photos": [
      {
       "u": "assets/2025__img-3912.jpg",
@@ -609,7 +812,36 @@
      }
     ],
     "video": null
+   },
+   {
+    "t_es": "Jornadas de Plantas Medicinales",
+    "t_en": "Medicinal Plants gatherings",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "Junto al programa de radio cannábico de Jujuy, 'La Rama que Llama', se comienzan a organizar las primeras Jornadas de Plantas Medicinales de la provincia, en articulación con la Universidad Nacional de Jujuy.",
+    "text_en": "Together with Jujuy's cannabis radio program 'La Rama que Llama', the province's first Medicinal Plants gatherings begin to be organized, in coordination with the National University of Jujuy.",
+    "photos": [],
+    "video": null
+   },
+   {
+    "t_es": "Amicus Curiae en el caso de la niña Cielo",
+    "t_en": "Amicus Curiae in the case of the child Cielo",
+    "sub_es": "",
+    "sub_en": "",
+    "text_es": "Fundación Puna articuló una red de organizaciones nacionales e internacionales de derechos humanos, que incluyó al Cyrus R. Vance Center for International Justice (NYC Bar Association) y al Servicio Paz y Justicia (SERPAJ). Esta alianza estratégica intervino institucionalmente mediante la figura de Amicus Curiae en el caso de la niña Cielo (Chaco), promoviendo la correcta aplicación de los estándares de protección de la niñez y la perspectiva de género ante el sistema judicial argentino.",
+    "text_en": "Fundación Puna convened a network of national and international human-rights organizations, including the Cyrus R. Vance Center for International Justice (NYC Bar Association) and Servicio Paz y Justicia (SERPAJ). This strategic alliance intervened institutionally through the figure of Amicus Curiae in the case of the child Cielo (Chaco), promoting the correct application of child-protection standards and a gender perspective before the Argentine judicial system.",
+    "photos": [],
+    "video": null
    }
   ]
+ },
+ {
+  "year": "2026",
+  "color": "#78677e",
+  "label_es": "Lo que viene",
+  "label_en": "What's next",
+  "intro_es": "Una nueva etapa de crecimiento: se reactivan y profundizan las acciones en territorio mientras se consolidan redes de cooperación internacional. Pronto, más novedades.",
+  "intro_en": "A new stage of growth: territorial action is renewed and deepened while international cooperation networks consolidate. More coming soon.",
+  "items": []
  }
 ]

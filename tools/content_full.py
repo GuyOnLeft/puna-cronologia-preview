@@ -314,11 +314,34 @@ for y in order:
 
 # Press links attached to the specific action (milestone) they document (keyed by t_es).
 LINKS={
+ "Apoyo educativo durante la pandemia":[
+   {"es":"Brinda clases de apoyo a niños del norte","en":"Providing tutoring for children in the north","src":"todojujuy.com","url":"https://www.todojujuy.com/jujuy/brinda-clases-apoyo-ninos-del-norte-n140387"},
+   {"es":"Un estudiante, el 'maestro' de los chicos en un pueblo doblemente aislado","en":"A student, the children's 'teacher' in a doubly-isolated village","src":"minutouno.com","url":"https://www.minutouno.com/sociedad/cuarentena/un-estudiante-el-maestro-los-chicos-un-pueblo-doblemente-aislado-jujuy-la-n5097433"},
+   {"es":"Una ayuda para que alumnos del norte reciban educación","en":"Help for students in the north to receive education","src":"todojujuy.com","url":"https://www.todojujuy.com/jujuy/una-ayuda-que-alumnos-del-norte-reciban-educacion-n140919"},
+ ],
+ "Santuario de Tres Pozos":[
+   {"es":"Fundación Puna Jujuy: organización no gubernamental (ONG)","en":"Fundación Puna Jujuy: NGO profile","src":"unjuradio.unju.edu.ar","url":"https://unjuradio.unju.edu.ar/fundacion-puna-jujuy-organizacion-no-gubernamental-ong/"},
+   {"es":"Últimas noticias sobre Fundación Puna","en":"Latest news on Fundación Puna","src":"todojujuy.com","url":"https://www.todojujuy.com/fundacion-puna-a12812"},
+ ],
+ "Sausalito · la cuestión del agua":[
+   {"es":"Cruzaron el río caminando con su hija enferma en brazos para llevarla al hospital","en":"They crossed the river on foot, carrying their sick daughter to the hospital","src":"la100.cienradios.com","url":"https://la100.cienradios.com/sociedad/cruzaron-el-rio-caminando-con-su-hija-enferma-en-brazos-para-llevarla-al-hospital/"},
+ ],
+ "Apoyo ante la represión — Lian Lamas":[
+   {"es":"Write for Rights 2024: Joel Paredes, Argentina (Amnistía Internacional)","en":"Write for Rights 2024: Joel Paredes, Argentina (Amnesty International)","src":"youtu.be","url":"https://youtu.be/-1Bn-OIWqeU"},
+ ],
+ "Verónica Chávez y James Cameron":[
+   {"es":"James Cameron con las comunidades que resisten al litio","en":"James Cameron with the communities resisting lithium","src":"aadeaa.org","url":"https://aadeaa.org/james-cameron-con-comunidades-que-resisten-al-litio/"},
+   {"es":"James Cameron dice que se sintió 'emboscado' en la Argentina","en":"James Cameron says he felt 'ambushed' in Argentina","src":"latimes.com","url":"https://www.latimes.com/espanol/entretenimiento/articulo/2023-06-11/james-cameron-dice-que-se-sintio-emboscado-en-la-argentina"},
+   {"es":"'Avatar' director James Cameron on lithium and the environment","en":"'Avatar' director James Cameron on lithium and the environment","src":"independent.co.uk","url":"https://www.independent.co.uk/climate-change/news/avatar-james-cameron-environment-lithium-b2355993.html"},
+   {"es":"Cameron, el litio y Jujuy","en":"Cameron, lithium and Jujuy","src":"apnews.com","url":"https://apnews.com/article/cameron-argentina-lithium-avatar-jujuy-87b601e8ac89a06768dcbc3fa537c4f1"},
+   {"es":"James Cameron y la Avatar Alliance Foundation","en":"James Cameron and the Avatar Alliance Foundation","src":"thecooldown.com","url":"https://www.thecooldown.com/green-business/james-cameron-director-avatar-alliance-foundation-titanic/"},
+ ],
+ "En las calles":[
+   {"es":"Conseguimos algo enorme: conocer nuestra historia y saber por qué estamos luchando","en":"We achieved something huge: knowing our history and why we're fighting","src":"lucha-indigena.org","url":"https://lucha-indigena.org/conseguimos-algo-enorme-conocer-nuestra-historia-y-saber-por-que-estamos-luchando/"},
+ ],
  "Cumbre de Energías Limpias · Parlamento Europeo":[
-   {"es":"Denunciando en Europa desastres extractivistas en nuestro país",
-    "en":"Denouncing our country's extractivist disasters, in Europe",
-    "src":"argentina.indymedia.org",
-    "url":"https://argentina.indymedia.org/2025/05/23/denunciando-en-europa-desastres-extractivistas-en-nuestro-pais/"}],
+   {"es":"Denunciando en Europa desastres extractivistas en nuestro país","en":"Denouncing our country's extractivist disasters, in Europe","src":"argentina.indymedia.org","url":"https://argentina.indymedia.org/2025/05/23/denunciando-en-europa-desastres-extractivistas-en-nuestro-pais/"},
+ ],
 }
 for y in YEARS:
     for it in y["items"]:

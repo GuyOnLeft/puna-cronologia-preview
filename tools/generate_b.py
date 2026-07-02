@@ -43,8 +43,6 @@ a{color:inherit}
 .carousel{position:relative;border-radius:16px;overflow:hidden;background:#2a1f2e;box-shadow:0 20px 50px -30px #0007}
 .track{display:flex;transition:transform .5s cubic-bezier(.22,.61,.36,1)}
 .slide{min-width:100%;max-width:100%;margin:0;flex:0 0 100%;position:relative}
-.notebadge{position:absolute;left:14px;bottom:14px;z-index:3;background:var(--coral);color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;padding:8px 14px;border-radius:999px;box-shadow:0 3px 10px #0007;display:inline-flex;align-items:center;gap:6px}
-.notebadge:hover{filter:brightness(1.06)}
 .slide img{width:100%;height:min(60vh,480px);object-fit:contain;background:#2a1f2e;display:block}
 .cbtn{position:absolute;top:50%;transform:translateY(-50%);background:#2a1f2ee6;color:#fff;border:0;width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;opacity:.85;transition:.2s}
 .cbtn:hover{opacity:1}.prev{left:12px}.next{right:12px}
@@ -54,6 +52,14 @@ a{color:inherit}
 .chapter.solo{grid-template-columns:1fr;max-width:860px}
 .soon{padding:16px 0 46px}
 .soon-badge{display:inline-block;color:#fff;font-weight:700;font-size:13px;padding:8px 18px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
+.press{max-width:1180px;margin:44px 0 0;padding-top:28px;border-top:1px solid var(--border)}
+.press h3{font-size:20px;color:var(--yc);margin:0 0 14px}
+.presslist{display:grid;gap:10px}
+.pressitem{display:flex;justify-content:space-between;align-items:center;gap:16px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;text-decoration:none;color:var(--fg);transition:border-color .15s}
+.pressitem:hover{border-color:var(--yc)}
+.pressitem .pt{display:block;font-weight:600;font-size:15px;line-height:1.35}
+.pressitem .ps{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+.pressitem .arr{color:var(--yc);font-weight:800;font-size:18px}
 .foot{background:#2a1f2e;color:#ffffffaa;text-align:center;padding:26px;font-size:13px}
 </style></head><body>
 <div class="nav"><b>Camino de Cambio</b>
@@ -75,8 +81,7 @@ const tabsEl=document.getElementById('tabs'), body=document.getElementById('ybod
 let timers=[];
 function clearTimers(){timers.forEach(t=>clearInterval(t));timers=[];}
 function carouselHTML(it,cid){
-  const slides=it.photos.map(p=>`<figure class="slide"><img loading="lazy" src="${p.u}" alt="${(p[LANG]||'').replace(/"/g,'&quot;')}">`+
-    (p.link?`<a class="notebadge" href="${p.link}" target="_blank" rel="noopener">📰 ${LANG==='es'?'Ver nota':'Read article'} →</a>`:'')+`</figure>`).join('');
+  const slides=it.photos.map(p=>`<figure class="slide"><img loading="lazy" src="${p.u}" alt="${(p[LANG]||'').replace(/"/g,'&quot;')}"></figure>`).join('');
   const multi=it.photos.length>1;
   return `<div class="carousel" id="${cid}"><div class="track">${slides}</div>`+
     (multi?`<button class="cbtn prev">‹</button><button class="cbtn next">›</button>`:'')+`</div>`+
@@ -86,6 +91,11 @@ function videoHTML(it){
   if(!it.video) return '';
   return `<div class="vid"><video src="${it.video.u}" controls playsinline preload="metadata"></video>`+
          `<div class="vcap">▶ ${it.video[LANG]}</div></div>`;
+}
+function pressHTML(y){
+  if(!y.press||!y.press.length) return '';
+  return `<div class="press"><h3>${LANG==='es'?'En la prensa':'In the press'}</h3><div class="presslist">`+
+    y.press.map(a=>`<a class="pressitem" href="${a.url}" target="_blank" rel="noopener"><span><span class="pt">${a[LANG]}</span><span class="ps">${a.src}</span></span><span class="arr">↗</span></a>`).join('')+`</div></div>`;
 }
 function renderYear(){
   const y=YEARS.find(x=>x.year===activeYear);
@@ -102,6 +112,7 @@ function renderYear(){
       (it['sub_'+LANG]?`<div class="isub">${it['sub_'+LANG]}</div>`:`<div class="isub">${y.year}</div>`)+
       `<h3>${it['t_'+LANG]}</h3><p>${it['text_'+LANG]}</p>${videoHTML(it)}</div>`+
       (hasPh?`<div>${carouselHTML(it,cid)}</div>`:'')+`</div>`;});
+  html+=pressHTML(y);
   clearTimers();
   body.innerHTML=html;
   y.items.forEach((it,idx)=>{if(it.photos.length>1)initCarousel(`c_${y.year}_${idx}`, it.photos.length);});

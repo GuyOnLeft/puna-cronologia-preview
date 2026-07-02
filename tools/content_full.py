@@ -305,15 +305,16 @@ for y in order:
         items.append(it)
     YEARS.append({"year":y,"color":c,"label_es":les,"label_en":len_,"intro_es":ies,"intro_en":ien,"items":items})
 
-# Article links (from Amor): photo -> press/article URL. Keyed by a substring of the asset path.
-ARTICLES={
- "2025__img-1995":"https://argentina.indymedia.org/2025/05/23/denunciando-en-europa-desastres-extractivistas-en-nuestro-pais/",
+# Press coverage per year (from Amor's links) -> rendered as an "En la prensa" section.
+PRESS={
+ "2025":[{"es":"Denunciando en Europa desastres extractivistas en nuestro país",
+          "en":"Denouncing our country's extractivist disasters, in Europe",
+          "src":"argentina.indymedia.org",
+          "url":"https://argentina.indymedia.org/2025/05/23/denunciando-en-europa-desastres-extractivistas-en-nuestro-pais/"}],
 }
-for y in YEARS:
-    for it in y["items"]:
-        for p in it["photos"]:
-            for k,url in ARTICLES.items():
-                if k in p["u"]: p["link"]=url
+_by={y["year"]:y for y in YEARS}
+for _yr,_items in PRESS.items():
+    if _yr in _by: _by[_yr]["press"]=_items
 
 (pathlib.Path(__file__).parent/"years.json").write_text(json.dumps(YEARS,ensure_ascii=False,indent=1))
 tot=sum(len(y["items"]) for y in YEARS); ph=sum(len(it["photos"]) for y in YEARS for it in y["items"])

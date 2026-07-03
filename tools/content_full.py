@@ -310,6 +310,8 @@ for y in order:
 
 # Press links attached to the specific action (milestone) they document (keyed by t_es).
 LINKS={
+ "Cumbre del Agua":[
+   {"es":"La Quinta Cumbre Latinoamericana del Agua para los Pueblos se realiza en Jujuy","en":"The Fifth Latin American Water Summit for the Peoples is held in Jujuy","src":"culturalsurvival.org","url":"https://www.culturalsurvival.org/es/news/la-quinta-cumbre-latinoamericana-del-agua-para-los-pueblos-se-realiza-en-jujuy-argentina"}],
  "Apoyo educativo durante la pandemia":[
    {"es":"Brinda clases de apoyo a niños del norte","en":"Providing tutoring for children in the north","src":"todojujuy.com","url":"https://www.todojujuy.com/jujuy/brinda-clases-apoyo-ninos-del-norte-n140387"},
    {"es":"Un estudiante, el 'maestro' de los chicos en un pueblo doblemente aislado","en":"A student, the children's 'teacher' in a doubly-isolated village","src":"minutouno.com","url":"https://www.minutouno.com/sociedad/cuarentena/un-estudiante-el-maestro-los-chicos-un-pueblo-doblemente-aislado-jujuy-la-n5097433"},

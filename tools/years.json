@@ -864,7 +864,15 @@
      "lon": -65.297,
      "es": "San Salvador de Jujuy",
      "en": "San Salvador de Jujuy"
-    }
+    },
+    "links": [
+     {
+      "es": "La Quinta Cumbre Latinoamericana del Agua para los Pueblos se realiza en Jujuy",
+      "en": "The Fifth Latin American Water Summit for the Peoples is held in Jujuy",
+      "src": "culturalsurvival.org",
+      "url": "https://www.culturalsurvival.org/es/news/la-quinta-cumbre-latinoamericana-del-agua-para-los-pueblos-se-realiza-en-jujuy-argentina"
+     }
+    ]
    },
    {
     "t_es": "Cultura en comunidad",

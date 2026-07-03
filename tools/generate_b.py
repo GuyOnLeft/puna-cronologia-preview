@@ -45,12 +45,12 @@ a{color:inherit}
 .carousel{position:relative;border-radius:16px;overflow:hidden;background:#2a1f2e;box-shadow:0 20px 50px -30px #0007}
 .track{display:flex;transition:transform .5s cubic-bezier(.22,.61,.36,1)}
 .slide{min-width:100%;max-width:100%;margin:0;flex:0 0 100%;position:relative}
-.slide img{width:100%;height:min(60vh,480px);object-fit:contain;background:#2a1f2e;display:block}
+.slide img{width:100%;height:480px;object-fit:contain;background:#2a1f2e;display:block}
 .cbtn{position:absolute;top:50%;transform:translateY(-50%);background:#2a1f2ee6;color:#fff;border:0;width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;opacity:.85;transition:.2s}
 .cbtn:hover{opacity:1}.prev{left:12px}.next{right:12px}
 .cbar{display:flex;justify-content:flex-end;margin-top:10px}
 .ccounter{font-size:12px;color:var(--muted);font-weight:600;white-space:nowrap}
-@media(max-width:820px){.chapter{grid-template-columns:1fr;gap:16px}.slide img{height:52vh}}
+@media(max-width:820px){.chapter{grid-template-columns:1fr;gap:16px}.slide img{height:300px}}
 .chapter.solo{grid-template-columns:1fr;max-width:860px}
 .soon{padding:16px 0 46px}
 .soon-badge{display:inline-block;color:#fff;font-weight:700;font-size:13px;padding:8px 18px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
@@ -139,6 +139,27 @@ function setLang(l){LANG=l;document.documentElement.lang=l;
 document.querySelectorAll('.toggle button').forEach(b=>b.onclick=()=>setLang(b.dataset.lang));
 buildTabs(); renderYear();
 </script></body></html>'''
-HTML=HTML.replace("__DATA__",DATA)
-(OUTDIR/"index.html").write_text(HTML,encoding="utf-8")
-print("wrote",OUTDIR/"index.html","— B draft:",len(YEARS),"years,",sum(len(y["items"]) for y in YEARS),"chapters")
+TPL=HTML
+(OUTDIR/"index.html").write_text(TPL.replace("__DATA__",DATA),encoding="utf-8")
+
+# embed.html — same content, chrome stripped, for iframing as a section inside another site.
+# nav+hero+footer hidden, tabs pinned to top; language driven by parent via ?lang= and postMessage.
+EMB=(TPL
+  .replace('</style>','.nav{display:none!important}.hero{display:none!important}.tabs{display:none!important}</style>')
+  .replace('.tabs{position:sticky;top:46px;','.tabs{position:sticky;top:0;')
+  .replace('<div class="foot" data-es="Vista previa de diseño · Fundación Puna" data-en="Design preview · Fundación Puna">Vista previa · Fundación Puna</div>\n','')
+  .replace('buildTabs(); renderYear();',
+           "buildTabs(); renderYear();\n"
+           "(function(){var q=new URLSearchParams(location.search),R=document.documentElement.style;"
+           "var p=q.get('lang'); if(p==='en'||p==='es')setLang(p);"
+           "var bg=q.get('bg'); if(bg)R.setProperty('--bg',bg);"
+           "var fg=q.get('fg'); if(fg)R.setProperty('--fg',fg);"
+           "window.addEventListener('message',function(e){var d=e.data||{};"
+           "if(d.pf_lang)setLang(d.pf_lang);"
+           "if(d.pf_bg)R.setProperty('--bg',d.pf_bg);"
+           "if(d.pf_fg)R.setProperty('--fg',d.pf_fg);"
+           "if(d.pf_year){var bs=document.querySelectorAll('#tabs button');"
+           "for(var i=0;i<bs.length;i++){if(bs[i].dataset.y===String(d.pf_year)){bs[i].click();break;}}}"
+           "});})();"))
+(OUTDIR/"embed.html").write_text(EMB.replace("__DATA__",DATA),encoding="utf-8")
+print("wrote",OUTDIR/"index.html","+ embed.html — B draft:",len(YEARS),"years,",sum(len(y["items"]) for y in YEARS),"chapters")

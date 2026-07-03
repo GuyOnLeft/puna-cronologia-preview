@@ -250,7 +250,8 @@ MILES=[
  {"y":"2025","t_es":"La transición energética y los derechos humanos: testimonios desde Argentina · Parlamento Europeo","t_en":"The Energy Transition and Human Rights: Testimonies from Argentina · European Parliament",
   "x_es":"Fundación Puna gestiona la participación de referentes comunitarios en una cumbre sobre energías limpias en el Parlamento Europeo: Verónica Chávez (cuenca de Salinas Grandes, Jujuy), Ñushpi Quilla Mayhuay Alancay (Malargüe, Mendoza) y Sergio Martínez (Andalgalá). Cada uno lleva una realidad distinta atravesada por un mismo eje: la defensa del agua y del territorio frente al avance extractivo, poniendo en el centro del debate las tensiones entre el discurso de las energías 'limpias' y sus impactos concretos en los territorios. Sol Felicitas Araya, del área de comunicación, realiza un informe audiovisual que reúne testimonios e imágenes del territorio para amplificar estas voces.",
   "x_en":"Fundación Puna arranges the participation of community leaders in a clean-energy summit at the European Parliament: Verónica Chávez (Salinas Grandes basin, Jujuy), Ñushpi Quilla Mayhuay Alancay (Malargüe, Mendoza) and Sergio Martínez (Andalgalá). Each brings a distinct reality tied to a shared axis: the defense of water and territory against extractive expansion, bringing to the center of the debate the tensions between the discourse of 'clean' energy and its concrete impacts. Sol Felicitas Araya, from communications, produces a short film gathering testimonies and images of the territory to amplify these voices.",
-  "ph":ALL("2025-parlamento","La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo","The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament")},
+  "ph":ALL("2025-parlamento","La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo","The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"),
+  "ph2":ALL("2025-parlamento-presentacion","Presentación en el Parlamento Europeo","Presentation at the European Parliament")},
  {"y":"2025","t_es":"Alianza con el SERPAJ","t_en":"Alliance with SERPAJ",
   "x_es":"En paralelo, Fundación Puna firma un convenio de trabajo con el Servicio Paz y Justicia (SERPAJ), organización fundada por Adolfo Pérez Esquivel. Este acuerdo fortalece una línea de acción orientada a la cooperación en conflictos territoriales, ampliando las redes de articulación y consolidando un perfil más internacionalista.",
   "x_en":"In parallel, Fundación Puna signs a working agreement with Servicio Paz y Justicia (SERPAJ), the organization founded by Adolfo Pérez Esquivel. This agreement strengthens a line of action oriented to cooperation on territorial conflicts, expanding networks and consolidating a more internationalist profile.",
@@ -306,7 +307,7 @@ for y in order:
     for m in MILES:
         if m["y"]!=y: continue
         it={"t_es":m["t_es"],"t_en":m["t_en"],"sub_es":"","sub_en":"",
-            "text_es":m["x_es"],"text_en":m["x_en"],"photos":m["ph"],"video":m.get("video")}
+            "text_es":m["x_es"],"text_en":m["x_en"],"photos":m["ph"],"photos2":m.get("ph2",[]),"video":m.get("video")}
         L=LOC.get(m["t_es"])
         if L: it["loc"]={"lat":L[0],"lon":L[1],"es":L[2],"en":L[3]}
         items.append(it)

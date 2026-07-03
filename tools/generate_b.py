@@ -50,6 +50,8 @@ a{color:inherit}
 .cbtn:hover{opacity:1}.prev{left:12px}.next{right:12px}
 .cbar{display:flex;justify-content:flex-end;margin-top:10px}
 .ccounter{font-size:12px;color:var(--muted);font-weight:600;white-space:nowrap}
+.c2{margin-top:22px}
+.c2lab{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--yc);font-weight:700;margin-bottom:8px}
 @media(max-width:820px){.chapter{grid-template-columns:1fr;gap:16px}.slide img{height:300px}}
 .chapter.solo{grid-template-columns:1fr;max-width:860px}
 .soon{padding:16px 0 46px}
@@ -79,12 +81,12 @@ let LANG='es', activeYear=YEARS[0].year;
 const tabsEl=document.getElementById('tabs'), body=document.getElementById('ybody');
 let timers=[];
 function clearTimers(){timers.forEach(t=>clearInterval(t));timers=[];}
-function carouselHTML(it,cid){
-  const slides=it.photos.map(p=>`<figure class="slide"><img loading="lazy" src="${p.u}" alt="${(p[LANG]||'').replace(/"/g,'&quot;')}"></figure>`).join('');
-  const multi=it.photos.length>1;
+function carouselHTML(photos,cid){
+  const slides=photos.map(p=>`<figure class="slide"><img loading="lazy" src="${p.u}" alt="${(p[LANG]||'').replace(/"/g,'&quot;')}"></figure>`).join('');
+  const multi=photos.length>1;
   return `<div class="carousel" id="${cid}"><div class="track">${slides}</div>`+
     (multi?`<button class="cbtn prev">‹</button><button class="cbtn next">›</button>`:'')+`</div>`+
-    (multi?`<div class="cbar"><span class="ccounter"><span id="${cid}_cur">1</span>/${it.photos.length}</span></div>`:'');
+    (multi?`<div class="cbar"><span class="ccounter"><span id="${cid}_cur">1</span>/${photos.length}</span></div>`:'');
 }
 function videoHTML(it){
   if(!it.video) return '';
@@ -108,14 +110,20 @@ function renderYear(){
   if(!y.items.length){
     html+=`<div class="soon"><span class="soon-badge" style="background:${y.color}">${LANG==='es'?'Próximamente':'Coming soon'}</span></div>`;
   }
-  y.items.forEach((it,idx)=>{const cid=`c_${y.year}_${idx}`; const hasPh=it.photos.length>0;
-    html+=`<div class="chapter${hasPh?'':' solo'}" style="--yc:${y.color}"><div class="txt">`+
+  y.items.forEach((it,idx)=>{const cid=`c_${y.year}_${idx}`, cid2=cid+'_b';
+    const hasPh=it.photos.length>0, hasPh2=it.photos2&&it.photos2.length>0;
+    const media=(hasPh?carouselHTML(it.photos,cid):'')
+      +(hasPh2?`<div class="c2"><div class="c2lab">${LANG==='es'?'La presentación':'The presentation'}</div>${carouselHTML(it.photos2,cid2)}</div>`:'');
+    html+=`<div class="chapter${(hasPh||hasPh2)?'':' solo'}" style="--yc:${y.color}"><div class="txt">`+
       (it['sub_'+LANG]?`<div class="isub">${it['sub_'+LANG]}</div>`:`<div class="isub">${y.year}</div>`)+
       `<h3>${it['t_'+LANG]}</h3><p>${it['text_'+LANG]}</p>${linksHTML(it)}${videoHTML(it)}</div>`+
-      (hasPh?`<div>${carouselHTML(it,cid)}</div>`:'')+`</div>`;});
+      ((hasPh||hasPh2)?`<div>${media}</div>`:'')+`</div>`;});
   clearTimers();
   body.innerHTML=html;
-  y.items.forEach((it,idx)=>{if(it.photos.length>1)initCarousel(`c_${y.year}_${idx}`, it.photos.length);});
+  y.items.forEach((it,idx)=>{
+    if(it.photos.length>1)initCarousel(`c_${y.year}_${idx}`, it.photos.length);
+    if(it.photos2&&it.photos2.length>1)initCarousel(`c_${y.year}_${idx}_b`, it.photos2.length);
+  });
   window.scrollTo({top:0});
 }
 function initCarousel(id,n){

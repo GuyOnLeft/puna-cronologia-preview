@@ -26,6 +26,7 @@
       "en": "School tutoring during the isolation"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -23.2,
@@ -78,6 +79,7 @@
       "en": "Victoria Araya, health volunteer in the Puna"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -23.42,
@@ -100,6 +102,7 @@
       "en": "Victoria, Yamil and Pablo — founding members of Fundación Puna"
      }
     ],
+    "photos2": [],
     "video": null
    }
   ]
@@ -136,6 +139,7 @@
       "en": "Olga cleaning and sorting the donations"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -23.92,
@@ -188,6 +192,7 @@
       "en": "Pablo Agüero in the community of Tres Pozos"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -23.63,
@@ -264,6 +269,7 @@
       "en": "Rinconadillas landscape"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -23.66,
@@ -301,6 +307,7 @@
       "en": "Alfarcito"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -23.83,
@@ -328,6 +335,7 @@
       "en": "Victoria Araya with the women of the Sausalito community"
      }
     ],
+    "photos2": [],
     "video": {
      "u": "assets/videos/sausalito-agua.mp4",
      "es": "Mujeres de Sausalito cuentan la situación con el agua en su comunidad",
@@ -392,6 +400,7 @@
       "en": "Victoria Araya with the community of Tusaquillas"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -22.95,
@@ -439,6 +448,7 @@
       "en": "Santa Ana landscape"
      }
     ],
+    "photos2": [],
     "video": {
      "u": "assets/videos/santa-ana.mp4",
      "es": "Actividad en la comunidad de Santa Ana",
@@ -500,6 +510,7 @@
       "en": "Activity in the community of Barrancas"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -23.2,
@@ -547,6 +558,7 @@
       "en": "Rinconadillas landscape"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -23.66,
@@ -569,6 +581,7 @@
       "en": "Victoria Araya and Jeremy Munson — online English classes"
      }
     ],
+    "photos2": [],
     "video": null
    }
   ]
@@ -595,6 +608,7 @@
       "en": "Victoria and Yamil"
      }
     ],
+    "photos2": [],
     "video": null
    }
   ]
@@ -641,6 +655,7 @@
       "en": "News clipping"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -34.6,
@@ -720,6 +735,7 @@
       "en": "Jeremy Munson at the Purmamarca blockade"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -23.745,
@@ -752,6 +768,7 @@
       "en": "Lian Lamas with Estela de Carlotto"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -34.6,
@@ -797,6 +814,7 @@
       "en": "Yamil Alejo at the Third Malón de la Paz"
      }
     ],
+    "photos2": [],
     "video": {
      "yt": "YqnzwAETx20",
      "es": "El Tercer Malón de la Paz continúa su reclamo en el Congreso",
@@ -838,6 +856,7 @@
       "en": "Fundación Puna meeting with members of the Third Malón de la Paz"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -24.185,
@@ -862,6 +881,7 @@
     "text_es": "La defensa del agua se consolida como una prioridad. En marzo, Fundación Puna participa en la Cumbre del Agua, un espacio de encuentro entre comunidades originarias, especialistas y activistas, donde se comparten estrategias para proteger los recursos hídricos frente al avance de políticas extractivas.",
     "text_en": "The defense of water consolidates as a priority. In March, Fundación Puna takes part in the Water Summit, a gathering of Indigenous communities, specialists and activists where strategies are shared to protect water resources against the advance of extractive policies.",
     "photos": [],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -24.185,
@@ -907,6 +927,7 @@
       "en": "Visit to the Rinconadillas community"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -23.78,
@@ -949,6 +970,7 @@
       "en": "Salinas Grandes"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -23.62,
@@ -1034,86 +1056,88 @@
       "u": "assets/2025-parlamento__12-suiza.jpg",
       "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
       "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     }
+    ],
+    "photos2": [
+     {
+      "u": "assets/2025-parlamento-presentacion__13-foto-panel-amor.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__13-foto-panel-amor.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__14-slide-01.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__14-slide-01.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__15-slide-02.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__15-slide-02.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__16-slide-03.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__16-slide-03.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__17-slide-04.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__17-slide-04.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__18-slide-05.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__18-slide-05.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__19-slide-06.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__19-slide-06.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__20-slide-07.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__20-slide-07.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__21-slide-08.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__21-slide-08.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__22-slide-09.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__22-slide-09.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__23-slide-10.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__23-slide-10.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__24-slide-11.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__24-slide-11.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__25-slide-12.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__25-slide-12.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__26-slide-13.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__26-slide-13.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__27-slide-14.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      },
      {
-      "u": "assets/2025-parlamento__27-slide-14.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
-     },
-     {
-      "u": "assets/2025-parlamento__28-slide-15.jpg",
-      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
-      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+      "u": "assets/2025-parlamento-presentacion__28-slide-15.jpg",
+      "es": "Presentación en el Parlamento Europeo",
+      "en": "Presentation at the European Parliament"
      }
     ],
     "video": null,
@@ -1156,6 +1180,7 @@
       "en": "Signing of the agreement between Fundación Puna and SERPAJ"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -34.6,
@@ -1203,6 +1228,7 @@
       "en": "1st Cannabis & Medicinal Plants Conference — Club Vial 6 (Oct 9–10, 2025)"
      }
     ],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -24.185,
@@ -1219,6 +1245,7 @@
     "text_es": "En octubre de 2025, Fundación Puna participó de la Sexta Cumbre Plurinacional del Agua para los Pueblos del Abya Yala, en San Pedro de Atacama (Chile). Desde muy temprano, comunidades y delegaciones de todo el continente se reunieron en una jornada de reflexión, intercambio de saberes y defensa del agua y los territorios. Tras la ceremonia de apertura, el mapeo colectivo de los conflictos hídricos y socioambientales permitió visibilizar realidades compartidas entre distintos pueblos, y el taller de monitoreo comunitario del agua —a cargo de la Unidad de Medio Ambiente del Consejo de Pueblos Atacameños— fortaleció la capacidad de las comunidades para generar sus propios datos y proteger sus fuentes. Por la tarde, las mesas de trabajo abordaron los grandes desafíos de la región —megaminería, hidrocarburos, hidrógeno verde y zonas de sacrificio; agronegocios, soberanía alimentaria y salud comunitaria; justicia ambiental y derechos de la naturaleza—, y el encuentro cerró con una plenaria de conclusiones y propuestas comunes para seguir tejiendo una red plurinacional en defensa del agua.",
     "text_en": "In October 2025, Fundación Puna took part in the Sixth Plurinational Water Summit for the Peoples of Abya Yala, in San Pedro de Atacama (Chile). From early morning, communities and delegations from across the continent gathered for a day of reflection, exchange of knowledge and defense of water and territory. After the opening ceremony, a collective mapping of water and socio-environmental conflicts made shared realities across peoples visible, and a community water-monitoring workshop —led by the Environment Unit of the Council of Atacameño Peoples— strengthened communities' capacity to generate their own data and protect their water sources. In the afternoon, thematic working tables took on the region's great challenges —mega-mining, hydrocarbons, green hydrogen and sacrifice zones; agribusiness, food sovereignty and community health; environmental justice and the rights of nature— and the summit closed with a plenary of shared conclusions and proposals to keep weaving a plurinational network in defense of water.",
     "photos": [],
+    "photos2": [],
     "video": null,
     "links": [
      {
@@ -1237,6 +1264,7 @@
     "text_es": "Fundación Puna articuló una red de organizaciones nacionales e internacionales de derechos humanos, que incluyó al Cyrus R. Vance Center for International Justice (NYC Bar Association) y al Servicio Paz y Justicia (SERPAJ). Esta alianza estratégica intervino institucionalmente mediante la figura de Amicus Curiae en el caso de la niña Cielo (Chaco), promoviendo la correcta aplicación de los estándares de protección de la niñez y la perspectiva de género ante el sistema judicial argentino.",
     "text_en": "Fundación Puna convened a network of national and international human-rights organizations, including the Cyrus R. Vance Center for International Justice (NYC Bar Association) and Servicio Paz y Justicia (SERPAJ). This strategic alliance intervened institutionally through the figure of Amicus Curiae in the case of the child Cielo (Chaco), promoting the correct application of child-protection standards and a gender perspective before the Argentine judicial system.",
     "photos": [],
+    "photos2": [],
     "video": null,
     "loc": {
      "lat": -27.45,

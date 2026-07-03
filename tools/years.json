@@ -797,7 +797,11 @@
       "en": "Yamil Alejo at the Third Malón de la Paz"
      }
     ],
-    "video": null,
+    "video": {
+     "yt": "YqnzwAETx20",
+     "es": "El Tercer Malón de la Paz continúa su reclamo en el Congreso",
+     "en": "The Third Malón de la Paz continues its claim at Congress"
+    },
     "loc": {
      "lat": -34.6,
      "lon": -58.38,
@@ -964,8 +968,8 @@
   "intro_en": "The year of international projection and judicial intervention. The Foundation brought socio-environmental claims to the European Parliament and forged key alliances with human-rights bodies such as SERPAJ, while diversifying territorial work toward community health and the public university.",
   "items": [
    {
-    "t_es": "Cumbre de Energías Limpias · Parlamento Europeo",
-    "t_en": "Clean Energy Summit · European Parliament",
+    "t_es": "La transición energética y los derechos humanos: testimonios desde Argentina · Parlamento Europeo",
+    "t_en": "The Energy Transition and Human Rights: Testimonies from Argentina · European Parliament",
     "sub_es": "",
     "sub_en": "",
     "text_es": "Fundación Puna gestiona la participación de referentes comunitarios en una cumbre sobre energías limpias en el Parlamento Europeo: Verónica Chávez (cuenca de Salinas Grandes, Jujuy), Ñushpi Quilla Mayhuay Alancay (Malargüe, Mendoza) y Sergio Martínez (Andalgalá). Cada uno lleva una realidad distinta atravesada por un mismo eje: la defensa del agua y del territorio frente al avance extractivo, poniendo en el centro del debate las tensiones entre el discurso de las energías 'limpias' y sus impactos concretos en los territorios. Sol Felicitas Araya, del área de comunicación, realiza un informe audiovisual que reúne testimonios e imágenes del territorio para amplificar estas voces.",
@@ -973,63 +977,143 @@
     "photos": [
      {
       "u": "assets/2025-parlamento__01-frente-parlamento.jpg",
-      "es": "Cumbre de Energías Limpias en el Parlamento Europeo",
-      "en": "Clean Energy Summit at the European Parliament"
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
      },
      {
       "u": "assets/2025-parlamento__02.jpg",
-      "es": "Cumbre de Energías Limpias en el Parlamento Europeo",
-      "en": "Clean Energy Summit at the European Parliament"
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
      },
      {
       "u": "assets/2025-parlamento__03-panel-territorio.jpg",
-      "es": "Cumbre de Energías Limpias en el Parlamento Europeo",
-      "en": "Clean Energy Summit at the European Parliament"
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
      },
      {
       "u": "assets/2025-parlamento__04-panel.jpg",
-      "es": "Cumbre de Energías Limpias en el Parlamento Europeo",
-      "en": "Clean Energy Summit at the European Parliament"
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
      },
      {
       "u": "assets/2025-parlamento__05.jpg",
-      "es": "Cumbre de Energías Limpias en el Parlamento Europeo",
-      "en": "Clean Energy Summit at the European Parliament"
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
      },
      {
       "u": "assets/2025-parlamento__06-reunion-oficial.jpg",
-      "es": "Cumbre de Energías Limpias en el Parlamento Europeo",
-      "en": "Clean Energy Summit at the European Parliament"
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
      },
      {
       "u": "assets/2025-parlamento__07.jpg",
-      "es": "Cumbre de Energías Limpias en el Parlamento Europeo",
-      "en": "Clean Energy Summit at the European Parliament"
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
      },
      {
       "u": "assets/2025-parlamento__08-reunion.jpg",
-      "es": "Cumbre de Energías Limpias en el Parlamento Europeo",
-      "en": "Clean Energy Summit at the European Parliament"
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
      },
      {
       "u": "assets/2025-parlamento__09.jpg",
-      "es": "Cumbre de Energías Limpias en el Parlamento Europeo",
-      "en": "Clean Energy Summit at the European Parliament"
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
      },
      {
       "u": "assets/2025-parlamento__10.jpg",
-      "es": "Cumbre de Energías Limpias en el Parlamento Europeo",
-      "en": "Clean Energy Summit at the European Parliament"
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
      },
      {
       "u": "assets/2025-parlamento__11-radio.jpg",
-      "es": "Cumbre de Energías Limpias en el Parlamento Europeo",
-      "en": "Clean Energy Summit at the European Parliament"
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
      },
      {
       "u": "assets/2025-parlamento__12-suiza.jpg",
-      "es": "Cumbre de Energías Limpias en el Parlamento Europeo",
-      "en": "Clean Energy Summit at the European Parliament"
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__13-foto-panel-amor.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__14-slide-01.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__15-slide-02.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__16-slide-03.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__17-slide-04.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__18-slide-05.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__19-slide-06.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__20-slide-07.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__21-slide-08.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__22-slide-09.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__23-slide-10.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__24-slide-11.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__25-slide-12.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__26-slide-13.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__27-slide-14.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
+     },
+     {
+      "u": "assets/2025-parlamento__28-slide-15.jpg",
+      "es": "La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo",
+      "en": "The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament"
      }
     ],
     "video": null,

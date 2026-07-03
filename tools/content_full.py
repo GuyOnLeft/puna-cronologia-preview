@@ -247,10 +247,10 @@ MILES=[
         ("IMG_7753","Recorrido junto a las comunidades","Touring alongside the communities"),
         ("IMG_9238","Salinas Grandes","Salinas Grandes")])},
  # ===== 2025 =====
- {"y":"2025","t_es":"Cumbre de Energías Limpias · Parlamento Europeo","t_en":"Clean Energy Summit · European Parliament",
+ {"y":"2025","t_es":"La transición energética y los derechos humanos: testimonios desde Argentina · Parlamento Europeo","t_en":"The Energy Transition and Human Rights: Testimonies from Argentina · European Parliament",
   "x_es":"Fundación Puna gestiona la participación de referentes comunitarios en una cumbre sobre energías limpias en el Parlamento Europeo: Verónica Chávez (cuenca de Salinas Grandes, Jujuy), Ñushpi Quilla Mayhuay Alancay (Malargüe, Mendoza) y Sergio Martínez (Andalgalá). Cada uno lleva una realidad distinta atravesada por un mismo eje: la defensa del agua y del territorio frente al avance extractivo, poniendo en el centro del debate las tensiones entre el discurso de las energías 'limpias' y sus impactos concretos en los territorios. Sol Felicitas Araya, del área de comunicación, realiza un informe audiovisual que reúne testimonios e imágenes del territorio para amplificar estas voces.",
   "x_en":"Fundación Puna arranges the participation of community leaders in a clean-energy summit at the European Parliament: Verónica Chávez (Salinas Grandes basin, Jujuy), Ñushpi Quilla Mayhuay Alancay (Malargüe, Mendoza) and Sergio Martínez (Andalgalá). Each brings a distinct reality tied to a shared axis: the defense of water and territory against extractive expansion, bringing to the center of the debate the tensions between the discourse of 'clean' energy and its concrete impacts. Sol Felicitas Araya, from communications, produces a short film gathering testimonies and images of the territory to amplify these voices.",
-  "ph":ALL("2025-parlamento","Cumbre de Energías Limpias en el Parlamento Europeo","Clean Energy Summit at the European Parliament")},
+  "ph":ALL("2025-parlamento","La transición energética y los derechos humanos: testimonios desde Argentina — Parlamento Europeo","The Energy Transition and Human Rights: Testimonies from Argentina — European Parliament")},
  {"y":"2025","t_es":"Alianza con el SERPAJ","t_en":"Alliance with SERPAJ",
   "x_es":"En paralelo, Fundación Puna firma un convenio de trabajo con el Servicio Paz y Justicia (SERPAJ), organización fundada por Adolfo Pérez Esquivel. Este acuerdo fortalece una línea de acción orientada a la cooperación en conflictos territoriales, ampliando las redes de articulación y consolidando un perfil más internacionalista.",
   "x_en":"In parallel, Fundación Puna signs a working agreement with Servicio Paz y Justicia (SERPAJ), the organization founded by Adolfo Pérez Esquivel. This agreement strengthens a line of action oriented to cooperation on territorial conflicts, expanding networks and consolidating a more internationalist profile.",
@@ -292,7 +292,7 @@ LOC={
  "Cumbre del Agua":(-24.185,-65.297,"San Salvador de Jujuy","San Salvador de Jujuy"),
  "Cultura en comunidad":(-23.78,-65.45,"Angosto El Pérchel, Jujuy","Angosto El Pérchel, Jujuy"),
  "Activismo ambiental con Carola Rackete y Bojana Novakovic":(-23.62,-65.80,"Salinas Grandes, Jujuy","Salinas Grandes, Jujuy"),
- "Cumbre de Energías Limpias · Parlamento Europeo":(50.8503,4.3517,"Bruselas, Europa","Brussels, Europe"),
+ "La transición energética y los derechos humanos: testimonios desde Argentina · Parlamento Europeo":(50.8503,4.3517,"Bruselas, Europa","Brussels, Europe"),
  "Alianza con el SERPAJ":(-34.60,-58.38,"Buenos Aires","Buenos Aires"),
  "Jornadas de Plantas Medicinales":(-24.185,-65.297,"San Salvador de Jujuy","San Salvador de Jujuy"),
  "Amicus Curiae en el caso de la niña Cielo":(-27.45,-58.98,"Chaco","Chaco"),
@@ -345,7 +345,7 @@ LINKS={
  "En las calles":[
    {"es":"Conseguimos algo enorme: conocer nuestra historia y saber por qué estamos luchando","en":"We achieved something huge: knowing our history and why we're fighting","src":"lucha-indigena.org","url":"https://lucha-indigena.org/conseguimos-algo-enorme-conocer-nuestra-historia-y-saber-por-que-estamos-luchando/"},
  ],
- "Cumbre de Energías Limpias · Parlamento Europeo":[
+ "La transición energética y los derechos humanos: testimonios desde Argentina · Parlamento Europeo":[
    {"es":"Denunciando en Europa desastres extractivistas en nuestro país","en":"Denouncing our country's extractivist disasters, in Europe","src":"argentina.indymedia.org","url":"https://argentina.indymedia.org/2025/05/23/denunciando-en-europa-desastres-extractivistas-en-nuestro-pais/"},
  ],
 }

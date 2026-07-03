@@ -40,6 +40,8 @@ a{color:inherit}
 .chapter .txt p{color:var(--fg);opacity:.9;font-size:15.5px;margin:0 0 14px}
 .vid{margin-top:12px}.vid video{width:100%;border-radius:12px;display:block;background:#2a1f2e}
 .vid .vcap{font-size:12px;color:var(--muted);margin-top:6px}
+.ytwrap{position:relative;width:100%;padding-top:56.25%;border-radius:12px;overflow:hidden;background:#2a1f2e}
+.ytwrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
 .carousel{position:relative;border-radius:16px;overflow:hidden;background:#2a1f2e;box-shadow:0 20px 50px -30px #0007}
 .track{display:flex;transition:transform .5s cubic-bezier(.22,.61,.36,1)}
 .slide{min-width:100%;max-width:100%;margin:0;flex:0 0 100%;position:relative}
@@ -86,8 +88,10 @@ function carouselHTML(it,cid){
 }
 function videoHTML(it){
   if(!it.video) return '';
-  return `<div class="vid"><video src="${it.video.u}" controls playsinline preload="metadata"></video>`+
-         `<div class="vcap">▶ ${it.video[LANG]}</div></div>`;
+  const media=it.video.yt
+    ? `<div class="ytwrap"><iframe src="https://www.youtube-nocookie.com/embed/${it.video.yt}" title="${(it.video[LANG]||'').replace(/"/g,'&quot;')}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`
+    : `<video src="${it.video.u}" controls playsinline preload="metadata"></video>`;
+  return `<div class="vid">${media}<div class="vcap">▶ ${it.video[LANG]}</div></div>`;
 }
 function linksHTML(it){
   if(!it.links||!it.links.length) return '';

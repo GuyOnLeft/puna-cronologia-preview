@@ -54,7 +54,8 @@ def ALL(folder, es, en):  # grab every image in a folder (filenames don't matter
     return [{"u":opt(f),"es":es,"en":en} for f in fs]
 
 VID={"sausalito":{"u":"assets/videos/sausalito-agua.mp4","es":"Mujeres de Sausalito cuentan la situación con el agua en su comunidad","en":"Women of Sausalito describe the water situation in their community"},
-     "santaana":{"u":"assets/videos/santa-ana.mp4","es":"Actividad en la comunidad de Santa Ana","en":"Activity in the community of Santa Ana"}}
+     "santaana":{"u":"assets/videos/santa-ana.mp4","es":"Actividad en la comunidad de Santa Ana","en":"Activity in the community of Santa Ana"},
+     "malon3":{"yt":"YqnzwAETx20","es":"El Tercer Malón de la Paz continúa su reclamo en el Congreso","en":"The Third Malón de la Paz continues its claim at Congress"}}
 
 YMETA={
  "2020":("#ff5a4a","Nuestros orígenes","Our beginnings",
@@ -209,7 +210,8 @@ MILES=[
        [("IMG-20230729-WA0065","El Tercer Malón de la Paz en Buenos Aires","The Third Malón de la Paz in Buenos Aires"),
         ("IMG-20230729-WA0075","El Tercer Malón de la Paz en Buenos Aires","The Third Malón de la Paz in Buenos Aires"),
         ("IMG-20230729-WA0077","El Tercer Malón de la Paz en Buenos Aires","The Third Malón de la Paz in Buenos Aires"),
-        ("IMG_4358","Yamil Alejo en el Tercer Malón de la Paz","Yamil Alejo at the Third Malón de la Paz")])},
+        ("IMG_4358","Yamil Alejo en el Tercer Malón de la Paz","Yamil Alejo at the Third Malón de la Paz")]),
+  "video":VID["malon3"]},
  {"y":"2023","t_es":"Verónica Chávez y James Cameron","t_en":"Verónica Chávez and James Cameron",
   "x_es":"Con el acompañamiento de Fundación Puna, Verónica Chávez, representante de la Comunidad Santuario Tres Pozos, se reunió en Buenos Aires con el cineasta y activista ambiental James Cameron, y expuso de primera mano cómo el avance de la extracción de litio afecta los territorios, el acceso al agua y las formas de vida en la Puna. Victoria Araya participó como traductora, proyectando la voz de la comunidad a escala internacional.",
   "x_en":"With Fundación Puna's support, Verónica Chávez, representative of the Santuario Tres Pozos community, met in Buenos Aires with filmmaker and environmental activist James Cameron, and showed first-hand how the advance of lithium extraction affects the territories, water access and ways of life in the Puna. Victoria Araya took part as translator, projecting the community's voice on an international scale.",
